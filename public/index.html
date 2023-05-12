@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -16,12 +19,15 @@
 
 <body class="font-montserrat bg-gray-700">
    <header class="fixed top-0">
-    <nav class="p-5 bg-black shadow flex justify-between items-center w-screen">
-        <div class="">
+    <nav class="p-5 bg-black shadow md:flex md:justify-between md:items-center w-screen">
+        <div class="flex justify-between  items-center text-white ">
             <h1 class="text-4xl text-white font-normal">Job<span class="text-2xl text-redPrimary">Lancers</span></h1>
+            <div class="text-3xl cursor-pointer md:hidden block mx-2">
+                <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+            </div>
         </div>
 
-        <ul class="flex flex-col md:flex-row md:items-center gap-4">
+        <ul class="flex flex-col md:flex-row md:items-center gap-4 z-[-1] md:z-auto md:static absolute bg-black w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
             <li class="mx-1">
                 <a href="" class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Home</a>
             </li>
@@ -45,7 +51,16 @@
         
    </header>
 
-
+ 
+    <script>
+        function Menu(e){
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close" , list.classList.
+            add('top-[80px]') , list.classList.add('opacity-100'))
+            :(e.name = "menu" ,list.classList.remove('top-[80px]') ,
+            list.classList.remove('opacity-100'))
+        }
+    </script>
 </body>
 
 </html>
