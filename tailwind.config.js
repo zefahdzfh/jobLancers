@@ -9,6 +9,9 @@ module.exports = {
       } ,
       colors:{
         'redPrimary' : '#ED2B2A' ,
+      },
+      backgroundImage:{
+        'Unsplash' : "url('../img/unsplash.png')" ,
       }
     },
   },
