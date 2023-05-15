@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <title>joblancers</title>
+</head>
+
+<body class="font-montserrat">
+    <div class="bg-[url('/assets/css/img/header.jpg')] bg-blend-multiply bg-black/80 bg-cover bg-center">
+
+    <div class="flex justify-center" id="navbar">
+        <header class="top-0 ">
+            <nav class="py-5 pl-10 pr-10 md:pl-3 md:pr-3 md:pt-3 gap-3 bg-black md:bg-transparent shadow md:flex md:justify-center md:items-center w-screen md:w-full pb-0 md:pb-1  md:border-b">
+                <div class="flex justify-between  items-center text-white pb-5 md:pb-0 mb-10 md:mb-3 ">
+                    <h1 class="md:text-4xl text-3xl text-white font-normal">Job<span class=" text-redPrimary">Lancers</span></h1>
+                    <div class="text-3xl cursor-pointer md:hidden block mx-2 my-auto">
+                        <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                    </div>
+                </div>
+
+            <ul
+                class="flex flex-col md:flex-row md:items-center gap-4 z-[1] md:z-auto md:static absolute bg-black md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
+                <li class="mx-1">
+                    <a href=""
+                        class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Home</a>
+                </li>
+                <li class="mx-1">
+                    <a href=""
+                        class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Find
+                        Jobs</a>
+                </li>
+                <li class="mx-1">
+                    <a href=""
+                        class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">About
+                        Us</a>
+                </li>
+                <li class="mx-1">
+                    <a href=""
+                        class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Contact
+                        Us</a>
+                </li>
+
+                    <!-- <button class="bg-redPrimary px-5 py-2 text-white hover:bg-transparent hover:border-redPrimary hover:ring rounded-full">
+                        Sign Up
+                    </button> -->
+
+                    <input type="checkbox" class="hidden w-0" id="dark-toggle" />
+                            <label for="dark-toggle" class="flex flex-row">
+                                <li class="text-xl items-center font-medium dark:block hidden text-white ">
+                                    <i class="fa-solid fa-sun"></i>
+                                </li>
+                                <li class="text-xl font-medium list-none dark:hidden text-white "><i class="fa-solid fa-moon"></i></li>
+                            </label>
+                </ul>
+                        
+            </nav>
+        </header>
+    </div>
+
+   
+        <div class="">
+            <div class="w-screen mx-auto h-[700px] top-0 ">
+                    <div class="py-72 gap-8 flex justify-center text-center flex-col ">
+                        <h2 class="text-white font-semibold text-4xl"><span class="typedjs"><br></span></h2>
+                    </div>
+            </div>
+        </div>
+
+        
+    </div>
+   <main>
+        <div class="mb-96"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    <script>
+        function Menu(e){
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close" , list.classList.
+            add('top-[60px]') , list.classList.add('opacity-100'))
+            :(e.name = "menu" ,list.classList.remove('top-[60px]') ,
+            list.classList.remove('opacity-100'))
+        }
+
+        const darkToggle = document.querySelector('#dark-toggle');
+        const html = document.querySelector('html');
+
+        darkToggle.addEventListener('click', function () {
+            if (darkToggle.checked) {
+                html.classList.add('dark');
+                localStorage.theme = 'dark';
+            } else {
+                html.classList.remove('dark');
+                localStorage.theme = 'light';
+            }
+        });
+
+        window.onscroll = function() {
+            menu()
+        };
+
+        function menu() {
+            if(document.documentElement.scrollTop > 1) {
+                document.getElementById("navbar").classList.remove("fixed")
+            } else {
+                document.getElementById("navbar").classList.remove("fixed")
+            }
+        }
+    </script>
+
+    <script src="JobLancer.js"></script>
+</body>
+
+</html>
