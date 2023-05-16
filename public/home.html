@@ -21,7 +21,7 @@
 </head>
 
 <body class="font-montserrat">
-    <div class="spin-wrapper h-screen flex justify-center items-center bg-gray-600" id="loading"> 
+    <div class="spin-wrapper h-screen flex justify-center items-center bg-gray-600" id="loading">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-50 h-20 animate-bounce"
             viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
             <path
@@ -31,68 +31,109 @@
 
     <div class="bg-[url('/assets/css/img/header.jpg')] bg-blend-multiply bg-black/80 bg-cover bg-center">
 
-    <div class="flex justify-center" id="navbar">
-        <header class="top-0 ">
-            <nav class="py-5 pl-10 pr-10 md:pl-3 md:pr-3 md:pt-3 gap-3 bg-black md:bg-transparent shadow md:flex md:justify-center md:items-center w-screen md:w-full pb-0 md:pb-1  md:border-b">
-                <div class="flex justify-between  items-center text-white pb-5 md:pb-0 mb-10 md:mb-3 ">
-                    <h1 class="md:text-4xl text-3xl text-white font-normal">Job<span class=" text-redPrimary">Lancers</span></h1>
-                    <div class="text-3xl cursor-pointer md:hidden block mx-2 my-auto">
-                        <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+
+
+        <div class="flex justify-center" id="navbar">
+            <header class="top-0 ">
+                <nav
+                    class=" py-5 pl-10 pr-10 md:pl-10 md:pr-10 md:pt-3 gap-3 bg-black md:bg-transparent shadow md:flex md:justify-center md:items-center w-screen md:w-full pb-0 md:pb-1  md:border-b">
+                    <div class="flex justify-between items-center text-white pb-5 md:pb-0 mb-10 md:mb-3 ">
+                        <h1 class="md:text-4xl text-3xl text-white font-normal">Job<span
+                                class=" text-redPrimary">Lancers</span></h1>
+                        <div class="text-3xl cursor-pointer md:hidden block mx-2 my-auto">
+                            <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                        </div>
                     </div>
-                </div>
 
-            <ul
-                class="flex flex-col md:flex-row md:items-center gap-4 z-[1] md:z-auto md:static absolute bg-black md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
-                <li class="mx-1">
-                    <a href=""
-                        class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Home</a>
-                </li>
-                <li class="mx-1">
-                    <a href=""
-                        class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Find
-                        Jobs</a>
-                </li>
-                <li class="mx-1">
-                    <a href=""
-                        class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">About
-                        Us</a>
-                </li>
-                <li class="mx-1">
-                    <a href=""
-                        class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Contact
-                        Us</a>
-                </li>
+                    <ul
+                        class="flex flex-col md:flex-row md:items-center gap-4 z-[1] md:z-auto md:static absolute bg-black md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
+                        <li class="mx-1">
+                            <a href=""
+                                class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Home</a>
+                        </li>
+                        <li class="mx-1">
+                            <a href=""
+                                class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Find
+                                Jobs</a>
+                        </li>
+                        <li class="mx-1">
+                            <a href=""
+                                class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">About
+                                Us</a>
+                        </li>
 
-                    <!-- <button class="bg-redPrimary px-5 py-2 text-white hover:bg-transparent hover:border-redPrimary hover:ring rounded-full">
+                        <!-- <button class="bg-redPrimary px-5 py-2 text-white hover:bg-transparent hover:border-redPrimary hover:ring rounded-full">
                         Sign Up
                     </button> -->
 
-                    <input type="checkbox" class="hidden w-0" id="dark-toggle" />
-                            <label for="dark-toggle" class="flex flex-row">
-                                <li class="text-xl items-center font-medium dark:block hidden text-white ">
-                                    <i class="fa-solid fa-sun"></i>
-                                </li>
-                                <li class="text-xl font-medium list-none dark:hidden text-white "><i class="fa-solid fa-moon"></i></li>
-                            </label>
-                </ul>
-                        
-            </nav>
-        </header>
-    </div>
+                        <input type="checkbox" class="hidden w-0" id="dark-toggle" />
+                        <label for="dark-toggle" class="flex flex-row">
+                            <li class="text-xl items-center font-medium dark:block hidden text-white ">
+                                <i class="fa-solid fa-sun"></i>
+                            </li>
+                            <li class="text-xl font-medium list-none dark:hidden text-white "><i
+                                    class="fa-solid fa-moon"></i></li>
+                                    
+                        </label>
+                    </ul>
 
-   
+                </nav>
+            </header>
+        </div>
+
+
         <div class="">
             <div class="w-screen mx-auto h-[700px] top-0 ">
-                    <div class="py-72 gap-8 flex justify-center text-center flex-col ">
-                        <h2 class="text-white font-semibold text-4xl"><span class="typedjs"><br></span></h2>
-                    </div>
+                <div class="py-72 gap-8 flex justify-center text-center flex-col ">
+                    <h2 class="text-white font-semibold text-4xl"><span class="typedjs"><br></span></h2>
+                </div>
             </div>
         </div>
 
-        
+
     </div>
-   <main>
-        <div class="mb-96"></div>
+
+    <main>
+        <section id="homePage">
+            <div class="mb-auto">
+                <h1 class="text-5xl font-bold flex justify-center items-center my-10"> <span
+                        class="text-redPrimary">Hello</span>There!
+                </h1>
+
+                <p class="text-xl font-medium text-center text-[25px]">
+                    We are proud to be part of the innovative and dynamic freelance world. At JobLacers, <br> we offer
+                    the
+                    right freelance solutions for your needs. Join us and find the best way to <br> achieve your goals.
+                </p>
+
+                <div class="py-10">
+                    <div class="bg-redPrimary py-10 flex justify-center w-full h-full">
+                        <p class="text-white text-xl font-medium flex items-center justify-center w-fit h-fit">
+                            At Joblancers, we are thrilled to have you join us in this exciting journey <br> where
+                            freelancers and clients come together to shape the future of work. <br> Step into a world
+                            where
+                            talent meets opportunity, where creativity <br> knows no bounds, and where passion drives
+                            innovation.
+                        </p>
+                        <img src="../assets/css/img/Rectangle 29.png" alt="" srcset="" class="px-10">
+                    </div>
+                </div>
+
+                <div class="py-10">
+                    <div class="bg-white py-10 flex justify-center w-full h-full">
+                        <img src="../assets/css/img/Rectangle 28.png" alt="" class="px-5">
+                        <p class="text-xl font-medium flex justify-center items-center w-fit h-fit text-right">
+                            Our mission is to empower freelancers by providing them <br> with a platform to showcase
+                            their
+                            skills, connect with clients <br> from around the globe, and build long-lasting professional
+                            <br>
+                            relationships. We believe in fostering a supportive and <br> collaborative community where
+                            freelancers can thrive, learn <br> from each other, and expand their horizons.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -118,18 +159,18 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
 
- 
+
     <script>
-        function Menu(e){
+        function Menu(e) {
             let list = document.querySelector('ul');
-            e.name === 'menu' ? (e.name = "close" , list.classList.
-            add('top-[60px]') , list.classList.add('opacity-100'))
-            :(e.name = "menu" ,list.classList.remove('top-[60px]') ,
-            list.classList.remove('opacity-100'))
+            e.name === 'menu' ? (e.name = "close", list.classList.
+                add('top-[60px]'), list.classList.add('opacity-100'))
+                : (e.name = "menu", list.classList.remove('top-[60px]'),
+                    list.classList.remove('opacity-100'))
         }
 
         const darkToggle = document.querySelector('#dark-toggle');
@@ -142,15 +183,15 @@
             } else {
                 html.classList.remove('dark');
                 localStorage.theme = 'light';
-            }
-        });
+            }
+        });
 
-        window.onscroll = function() {
+        window.onscroll = function () {
             menu()
         };
 
         function menu() {
-            if(document.documentElement.scrollTop > 1) {
+            if (document.documentElement.scrollTop > 1) {
                 document.getElementById("navbar").classList.remove("fixed")
             } else {
                 document.getElementById("navbar").classList.remove("fixed")
@@ -159,12 +200,12 @@
 
         $(window).on('load', function () {
 
-        $('.spin-wrapper').fadeOut();
+            $('.spin-wrapper').fadeOut();
 
-        $(setTimeout(() => {
-    
+            $(setTimeout(() => {
+
             }, 1000))
-            });
+        });
 
     </script>
 
