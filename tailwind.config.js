@@ -11,7 +11,7 @@ module.exports = {
         'redPrimary' : '#ED2B2A' ,
       },
       backgroundImage:{
-        'Unsplash' : "url('../img/unsplash.png')" ,
+        'Unsplash' : "url('./assets/css/img/unsplas.png')" ,
       }
     },
   },
