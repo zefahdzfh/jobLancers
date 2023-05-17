@@ -690,6 +690,54 @@ video {
   left: 4rem;
 }
 
+.bottom-\[2-rem\] {
+  bottom: 2-rem;
+}
+
+.bottom-\[50rem\] {
+  bottom: 50rem;
+}
+
+.bottom-\[55rem\] {
+  bottom: 55rem;
+}
+
+.left-\[10rem\] {
+  left: 10rem;
+}
+
+.right-\[10rem\] {
+  right: 10rem;
+}
+
+.left-\[14rem\] {
+  left: 14rem;
+}
+
+.left-\[25rem\] {
+  left: 25rem;
+}
+
+.left-\[23rem\] {
+  left: 23rem;
+}
+
+.left-\[22rem\] {
+  left: 22rem;
+}
+
+.left-\[50rem\] {
+  left: 50rem;
+}
+
+.bottom-\[30rem\] {
+  bottom: 30rem;
+}
+
+.left-\[55rem\] {
+  left: 55rem;
+}
+
 .z-\[1\] {
   z-index: 1;
 }
@@ -801,6 +849,22 @@ video {
   margin-bottom: 5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-\[20rem\] {
+  margin-top: 20rem;
+}
+
+.mb-\[10rem\] {
+  margin-bottom: 10rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -847,6 +911,38 @@ video {
 
 .h-\[50rem\] {
   height: 50rem;
+}
+
+.h-\[20rem\] {
+  height: 20rem;
+}
+
+.h-\[40rem\] {
+  height: 40rem;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[10rem\] {
+  height: 10rem;
+}
+
+.h-\[0rem\] {
+  height: 0rem;
+}
+
+.h-\[25rem\] {
+  height: 25rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-\[2rem\] {
+  height: 2rem;
 }
 
 .w-0 {
@@ -907,6 +1003,10 @@ video {
 
 .w-\[40rem\] {
   width: 40rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 @keyframes bounce {
@@ -1077,6 +1177,21 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1113,8 +1228,24 @@ video {
   padding-left: 5rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-montserrat {
@@ -1175,6 +1306,14 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-extralight {
+  font-weight: 200;
 }
 
 .text-redPrimary {
