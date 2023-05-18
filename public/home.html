@@ -20,7 +20,7 @@
     <title>joblancers</title>
 </head>
 
-<body class="font-montserrat overflow-x-auto">
+<body class="font-montserrat overflow-x-auto dark:bg-darkbg">
     <div class="spin-wrapper h-screen flex justify-center items-center bg-gray-600" id="loading">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-50 h-20 animate-bounce"
             viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -61,12 +61,18 @@
                                 class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">About
                                 Us</a>
                         </li>
+                        <li class="mx-1">
+                            <a href="">
+                                 <img src="../assets/img/pp.png" alt="" class="w-10 rounded-full border-2">
 
+                            </a>
+                        </li>
+                       
                         <!-- <button class="bg-redPrimary px-5 py-2 text-white hover:bg-transparent hover:border-redPrimary hover:ring rounded-full">
                         Sign Up
                     </button> -->
 
-                        <input type="checkbox" class="hidden w-0" id="dark-toggle" />
+                        <!-- <input type="checkbox" class="hidden w-0" id="dark-toggle" />
                         <label for="dark-toggle" class="flex flex-row">
                             <li class="text-xl items-center font-medium dark:block hidden text-white ">
                                 <i class="fa-solid fa-sun"></i>
@@ -74,13 +80,32 @@
                             <li class="text-xl font-medium list-none dark:hidden text-white "><i
                                     class="fa-solid fa-moon"></i></li>
                                     
-                        </label>
+                        </label> -->
                     </ul>
 
                 </nav>
             </header>
         </div>
 
+        <aside class="fixed py-1.5 px-[13px] dark:px-2.5  block m-auto rounded-full bg-black dark:bg-white left-5 bottom-14 duration-[0.2s] ease-in-out hover:ring hover:ring-redPrimary/70 hover:border-2 dark:hover:border-black ">
+            <div class="h-full flex items-center text-center justify-center">
+                <div class=" flex items-center text-center overflow-x-hidden">
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                                <label for="dark-toggle" class="flex flex-row justify-center text-center items-center">
+                                    <li class="text-xl items-center font-medium dark:block dark:text-black hidden text-white ">
+                                        <i class="fa-solid fa-sun"></i>
+                                    </li>
+                                    <li class="text-xl items-center font-medium list-none dark:hidden text-white "><i
+                                            class="fa-solid fa-moon"></i></li>
+                                            <!-- <h1 class="text-white dark:text-black font-normal text-base ml-2">Night/Day</h1> -->
+                                </label>
+
+                </div>
+                <!-- <div class="">
+                    
+                </div> -->
+            </div>
+        </aside>
 
         <div class="">
             <div class="w-screen mx-auto h-[700px] top-0 ">
@@ -102,11 +127,11 @@
             <div class="mb-auto">
                 <div class="py-10">
                     <div class="py-10 flex justify-center flex-col w-full h-full items-center text-center">
-                        <h1 class="text-3xl md:text-5xl font-bold text-center my-10"> <span class="text-redPrimary"> Hello </span>
+                        <h1 class="text-3xl md:text-5xl font-bold text-center my-10 dark:text-white"> <span class="text-redPrimary"> Hello </span>
                             There!
                         </h1>
 
-                        <p class="text-sm md:text-xl leading-relaxed md:leading-loose font-medium justify-center text-center w-fit md:w-7/12">
+                        <p class="text-sm dark:text-white md:text-xl leading-relaxed md:leading-loose font-medium justify-center text-center w-fit md:w-7/12">
                             We are proud to be part of the innovative and dynamic freelance world. At JobLacers, we
                             offer
                             the
@@ -120,7 +145,7 @@
 
                 <div class="py-10">
                     <div class="bg-slate-500/10 py-10 flex md:flex-row flex-col w-full h-full justify-between ">
-                        <p class=" text-sm md:text-xl leading-relaxed md:leading-loose font-medium mx-auto flex text-center md:text-left items-center justify-center w-fit md:w-7/12 h-fit my-10 md:my-auto order-2 md:order:1 ">
+                        <p class=" text-sm dark:text-white md:text-xl leading-relaxed md:leading-loose font-medium mx-auto flex text-center md:text-left items-center justify-center w-fit md:w-7/12 h-fit my-10 md:my-auto order-2 md:order:1 ">
                             At Joblancers, we are thrilled to have you join us in this exciting journey  where
                             freelancers and clients come together to shape the future of work.  Step into a world
                             where
@@ -129,10 +154,10 @@
                         </p>
                         <img src="../assets/img/home1.png" alt="" srcset="" class=" w-screen md:w-96 md:h-auto h-auto md:rounded-l-xl order-1 md:order-2 ">
                     </div>
-                    <div class="bg-white py-10 flex  md:flex-row flex-col justify-between w-full h-full">
+                    <div class=" py-10 flex  md:flex-row flex-col justify-between w-full h-full">
                         <img src="../assets/img/home2.png" alt="" class=" w-screen md:w-96 md:h-auto h-auto md:rounded-r-xl">
                         <p
-                            class="text-sm md:text-xl leading-relaxed md:leading-loose font-medium mx-auto flex  items-center justify-center h-fit w-fit md:w-7/12 my-10 md:my-auto text-center md:text-right">
+                            class="text-sm dark:text-white md:text-xl leading-relaxed md:leading-loose font-medium mx-auto flex  items-center justify-center h-fit w-fit md:w-7/12 my-10 md:my-auto text-center md:text-right">
                             Our mission is to empower freelancers by providing them  with a platform to showcase
                             their
                             skills, connect with clients  from around the globe, and build long-lasting professional
@@ -142,7 +167,7 @@
                         </p>
                     </div>
                     <div class="bg-slate-500/10 py-10 flex  md:flex-row flex-col  w-full h-full justify-between ">
-                        <p class=" text-sm md:text-xl leading-relaxed md:leading-loose font-medium mx-auto flex text-center md:text-l  eft items-center justify-center w-fit md:w-7/12 h-fit my-10 md:my-auto order-2 md:order:1">
+                        <p class=" text-sm dark:text-white md:text-xl leading-relaxed md:leading-loose font-medium mx-auto flex text-center md:text-l  eft items-center justify-center w-fit md:w-7/12 h-fit my-10 md:my-auto order-2 md:order:1">
                             We are committed to excellence, professionalism, and  utmost customer satisfaction. As
                             you
                             embark on your  freelance journey or explore new avenues for your business, 
