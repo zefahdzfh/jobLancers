@@ -20,8 +20,8 @@
     <title>joblancers</title>
 </head>
 
-<body class="font-montserrat">
-    <div class="spin-wrapper h-screen flex justify-center items-center bg-gray-600" id="loading">
+<body class="font-montserrat  dark:bg-darkbg">
+    <div class="spin-wrapper h-screen flex justify-center items-center bg-gray-600"> 
         <svg xmlns="http://www.w3.org/2000/svg" class="w-50 h-20 animate-bounce"
             viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
             <path
@@ -48,39 +48,32 @@
                     <ul
                         class="flex flex-col md:flex-row md:items-center gap-4 z-[1] md:z-auto md:static absolute bg-black md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
                         <li class="mx-1">
-                            <a href=""
+                            <a href="home.html"
                                 class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Home</a>
                         </li>
                         <li class="mx-1">
-                            <a href=""
+                            <a href="findjobs.html"
                                 class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Find
                                 Jobs</a>
                         </li>
                         <li class="mx-1">
-                            <a href=""
+                            <a href="about.html"
                                 class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">About
                                 Us</a>
                         </li>
-                        <li class="mx-1">
-                            <a href="">
-                                 <img src="../assets/img/pp.png" alt="" class="w-10 rounded-full border-2">
-
-                            </a>
-                        </li>
-                       
-                        <!-- <button class="bg-redPrimary px-5 py-2 text-white hover:bg-transparent hover:border-redPrimary hover:ring rounded-full">
-                        Sign Up
-                    </button> -->
-
-                        <!-- <input type="checkbox" class="hidden w-0" id="dark-toggle" />
-                        <label for="dark-toggle" class="flex flex-row">
-                            <li class="text-xl items-center font-medium dark:block hidden text-white ">
-                                <i class="fa-solid fa-sun"></i>
+                        <div class="mx-1">
+                            <li class="">
+                                <div class="" id="userImg">
+                                    <a href="">
+                                         <img src="../assets/img/pp.png" alt="" class="w-10 rounded-full border-2" id="photo">
+        
+                                    </a>
+                                    <!-- <input type="file" id="file" class="hidden">
+                                    <label for="file" id="upload" class="absolute h-[30px] w-[30px] p-[6px_6px] rounded-[50%] cursor-pointer text-white bg-gray-500 shadow"><i class="fa-solid fa-camera"></i></label> -->
+                                </div>
                             </li>
-                            <li class="text-xl font-medium list-none dark:hidden text-white "><i
-                                    class="fa-solid fa-moon"></i></li>
-                                    
-                        </label>
+
+                        </div>
                     </ul>
 
                 </nav>
@@ -144,7 +137,7 @@
                 </div>
 
                 <div class="py-10">
-                    <div class="bg-slate-500/10 py-10 flex md:flex-row flex-col w-full h-full justify-between ">
+                    <div class="bg-slate-500/10 py-10 flex md:flex-row flex-col w-screen h-full justify-between ">
                         <p class=" text-sm dark:text-white md:text-xl leading-relaxed md:leading-loose font-medium mx-auto flex text-center md:text-left items-center justify-center w-fit md:w-7/12 h-fit my-10 md:my-auto order-2 md:order:1 ">
                             At Joblancers, we are thrilled to have you join us in this exciting journey  where
                             freelancers and clients come together to shape the future of work.  Step into a world
@@ -200,6 +193,47 @@
             </div>
         </section>
 
+        <!-- <section id="slider">
+            <div class="max-w-[1100px] w-full relative">
+                <div class="top-[50%] h-[50px] w-[50px] cursor-pointer text-[1.25rem] absolute text-center leading-[50px] bg-white rounded-[50%] shadow-[0_3px_6px_rgba(0,0,0,0.23)] translate-y-[-50%] transition duration-[0.1s] ease-linear active:translate-y-[-50%] scale-[0.85] first:left-[-22px] last:right-[-22px] ">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                </div>
+                 
+                <ul class="grid grid-flow-col auto-cols-[calc((100%_/_ 3) - 12px)] overflow-x-auto ">
+                  <li class="card">
+                    <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+                    <h2>Blanche Pearson</h2>
+                    <span>Sales Manager</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/img-2.jpg" alt="img" draggable="false"></div>
+                    <h2>Joenas Brauers</h2>
+                    <span>Web Developer</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/img-3.jpg" alt="img" draggable="false"></div>
+                    <h2>Lariach French</h2>
+                    <span>Online Teacher</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/img-4.jpg" alt="img" draggable="false"></div>
+                    <h2>James Khosravi</h2>
+                    <span>Freelancer</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/img-5.jpg" alt="img" draggable="false"></div>
+                    <h2>Kristina Zasiadko</h2>
+                    <span>Bank Manager</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/img-6.jpg" alt="img" draggable="false"></div>
+                    <h2>Donald Horton</h2>
+                    <span>App Designer</span>
+                  </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
+        </section> -->
 
 
 
@@ -212,6 +246,41 @@
 
 
     </main>
+
+    <footer>
+        <div class="w-screen h-[16rem] md:h-[21rem] bg-black px-10 md:px-24 pb-4 flex">
+            <div class="pt-10 md:pt-20 ">
+               <h5 class="font-bold text-xl md:text-4xl text-white">Job<span class="text-redPrimary">Lancers</span></h5>
+               <p class="font-light text-lg md:text-3xl text-white mb-5">follow our social media</p>
+               <div class="text-white text-xl md:text-4xl w-full pb-20 flex flex-row gap-5 md:gap-10">
+                    <i class="fa-brands fa-facebook hover:animate-bounce"></i>
+                    <i class="fa-brands fa-instagram hover:animate-bounce"></i>
+                    <i class="fa-brands fa-twitter hover:animate-bounce"></i>
+                    <i class="fa-brands fa-github hover:animate-bounce"></i>
+               </div>   
+            </div>
+            <div class="flex w-full justify-end flex-row gap-20 md:gap-52 pt-10 md:pt-20">
+                <div class=" text-center flex flex-col gap-5">
+                    <h5 class="text-white font-bold text-xl md:text-3xl underline">Links</h5>
+                    <p class="text-white font-light text-lg md:text-2xl">Home</p>
+                    <p class="text-white font-light text-lg md:text-2xl">Find Jobs</p>
+                    <p class="text-white font-light text-lg md:text-2xl">About Us</p>
+                </div>
+                <div class="text-center flex flex-col gap-5">
+                    <h5 class="text-white font-bold text-xl md:text-3xl underline">Contact</h5>
+                    <p class="text-white font-light text-lg md:text-2xl">@alfaruky67@Gmail.com</p>
+                    <p class="text-white font-light text-lg md:text-2xl">+62 8123-4567-8910</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-white h-[1px]">           
+        </div>
+        <div class="w-full bg-black md:h-[10rem] px-1 md:px-96 py-10">
+            <p class="text-center text-white font-light text-xs md:text-2xl">© 2023 Joblancers. Is a registered Trademark of  Joblancers Professional Services Corporation All rights reserved. 
+                This website and its content are protected by copyright law </p>
+
+        </div>
+    </footer>
 
 
 
@@ -226,7 +295,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
+    </script>
 
 
     <script>
@@ -237,6 +306,27 @@
                 : (e.name = "menu", list.classList.remove('top-[60px]'),
                     list.classList.remove('opacity-100'))
         }
+
+
+        // const imgDiv = document.querySelector('#userImg');
+        // const img = document.querySelector('#photo');
+        // const file = document.querySelector('#file')
+        // const upload = document.querySelector('#upload');
+
+        // file.addEventListener('change',function(){
+        //     const chosedfile = this.file[0];
+        //     if(chosedfile){
+        //         const reader = new FileReader();
+
+        //         reader.addEventListener('load', function(){
+        //             img.setAttribute('src' , reader.result);
+        //         })
+        //     reader.readAsDataURL(chosedfile);
+        //     }
+        // })
+
+
+    
 
         const darkToggle = document.querySelector('#dark-toggle');
         const html = document.querySelector('html');
@@ -265,12 +355,12 @@
 
         $(window).on('load', function () {
 
-            $('.spin-wrapper').fadeOut();
+        $('.spin-wrapper').fadeOut();
 
-            $(setTimeout(() => {
-
-            }, 1000))
-        });
+        $(setTimeout(() => {
+    
+            }, 10))
+            });
 
     </script>
 
