@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/output.css">
+</head>
+<body>
+    <div class="profile-pic-div h-screen w-screen bg-blue-600 justify-center items-center flex">
+        <img src="../img/gambar.png" alt="" id="photo" class="rounded-full h-[10rem] w-[10rem] ring-2 ring-black flex absolute">
+        <input type="file" id="file" class="hidden">
+        <label for="file" id="uploadbtn" class="h-[5rem] w-[10rem] relative mt-20 rounded-b-full hover:text-white flex text-center hover:ring-2 ring-black/40 hover:bg-black/40  justify-center items-center font-light">choose photo</label>
+    </div>
+</body>
+
+<script>
+    const imgDiv = document.querySelector('.profile-pic-div');
+    const img = document.querySelector('#photo');
+    const file = document.querySelector('#file');
+    const uploadbtn = document.querySelector('#uploadbtn');
+
+
+    file.addEventListener('change', function(){
+
+        const choosedfile = this.files[0];
+
+        const reader = new FileReader();
+
+        reader.addEventListener('load', function(){
+            img.setAttribute('src', reader.result);
+        });
+
+        reader.readAsDataURL(choosedfile)
+
+    });
+
+</script>
+</html>
