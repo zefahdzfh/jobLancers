@@ -20,7 +20,7 @@
     <title>joblancers</title>
 </head>
 
-<body class="font-montserrat  dark:bg-darkbg">
+<body class="font-montserrat overflow-x-hidden  dark:bg-darkbg">
     <div class="spin-wrapper h-screen flex justify-center items-center bg-gray-600"> 
         <svg xmlns="http://www.w3.org/2000/svg" class="w-50 h-20 animate-bounce"
             viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -29,14 +29,14 @@
         </svg>
     </div>
 
-    <div class="bg-[url('/assets/img/header.png')] bg-blend-multiply bg-black/80 bg-cover bg-bottom">
+    <div class="bg-[url('/assets/img/header1.png')] h-screen bg-blend-multiply bg-black/80 bg-cover bg-bottom w-screen">
 
 
 
-        <div class="flex justify-center" id="navbar">
-            <header class="top-0 ">
+        <div class="flex justify-center" id="">
+            <header class="top-0 fixed z-50">
                 <nav
-                    class=" py-5 pl-10 pr-10 md:pl-0 md:pr-0 md:pt-3 gap-96 bg-black md:bg-transparent shadow md:flex md:justify-between md:items-center w-screen md:w-full pb-0 md:pb-1  md:border-b">
+                    class="py-5 pl-10 pr-10 md:pl-0 md:pr-0 md:pt-3 gap-64 bg-black md:bg-transparent shadow md:flex md:justify-between md:items-center w-screen md:w-full pb-0 md:pb-1  md:border-b " id="navbar">
                     <div class="flex justify-between items-center text-white pb-5 md:pb-0 mb-10 md:mb-3 ">
                         <h1 class="md:text-4xl text-3xl text-white font-normal">Job<span
                                 class=" text-redPrimary">Lancers</span></h1>
@@ -46,70 +46,74 @@
                     </div>
 
                     <ul
-                        class="flex flex-col md:flex-row md:items-center gap-4 z-[1] md:z-auto md:static absolute bg-black md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
-                        <li class="mx-1">
-                            <a href="index.html"
-                                class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Home</a>
+                    class="flex flex-col md:flex-row md:items-center gap-4 z-[1] md:z-auto md:static absolute bg-black md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
+                    <li class="mx-1">
+                        <a href="index.html"
+                            class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Home</a>
+                    </li>
+                    <li class="mx-1">
+                        <a href="NoLoginfindjobs.html"
+                            class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Find
+                            Jobs</a>
+                    </li>
+                    <li class="mx-1">
+                        <a href="NoLoginabout.html"
+                            class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">About
+                            Us</a>
+                    </li>
+                    <!-- <div class="mx-1">
+                        <li class="">
+                            <div class="" id="userImg">
+                                <a href="">
+                                     <img src="../assets/img/pp.png" alt="" class="w-10 rounded-full border-2" id="photo">
+    
+                                </a>
+                                 <input type="file" id="file" class="hidden">
+                                <label for="file" id="upload" class="absolute h-[30px] w-[30px] p-[6px_6px] rounded-[50%] cursor-pointer text-white bg-gray-500 shadow"><i class="fa-solid fa-camera"></i></label>
+                            </div>
                         </li>
-                        <li class="mx-1">
-                            <a href="NoLoginfindjobs.html"
-                                class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Find
-                                Jobs</a>
-                        </li>
-                        <li class="mx-1">
-                            <a href="NoLoginabout.html"
-                                class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">About
-                                Us</a>
-                        </li>
-                        <!-- <div class="mx-1">
-                            <li class="">
-                                <div class="" id="userImg">
-                                    <a href="">
-                                         <img src="../assets/img/pp.png" alt="" class="w-10 rounded-full border-2" id="photo">
-        
-                                    </a>
-                                     <input type="file" id="file" class="hidden">
-                                    <label for="file" id="upload" class="absolute h-[30px] w-[30px] p-[6px_6px] rounded-[50%] cursor-pointer text-white bg-gray-500 shadow"><i class="fa-solid fa-camera"></i></label>
-                                </div>
-                            </li>
 
-                        </div> -->
-                        <a href="signup.html">
-                            <button class="bg-redPrimary w-28 px-5 py-2 text-white hover:bg-transparent font-medium hover:border-redPrimary hover:ring rounded-full transition-all duration-75">
-                                Sign Up
-                            </button>
-                        </a>
-                        <a href="login.html">
-                            <button class="bg-white border-2 border-redPrimary w-28 px-5 py-2 text-black font-medium hover:text-white hover:bg-transparent hover:border-redPrimary hover:ring rounded-full transition-all duration-75">
-                                Login
-                            </button>
-                        </a>
+                    </div> -->
+                    <a href="signup.html">
+                        <button class="bg-redPrimary w-28 px-5 py-2 text-white hover:bg-transparent font-medium hover:border-redPrimary hover:ring rounded-full transition-all duration-75">
+                            Sign Up
+                        </button>
+                    </a>
+                    <a href="login.html">
+                        <button class="bg-white border-2 border-redPrimary w-28 px-5 py-2 text-black font-medium hover:text-white hover:bg-transparent hover:border-redPrimary hover:ring rounded-full transition-all duration-75">
+                            Login
+                        </button>
+                    </a>
+                    
+                </ul>
+                            
+                            
                         
-                    </ul>
-
+                        
                 </nav>
             </header>
         </div>
 
-        <aside class="fixed py-1.5 px-[13px] dark:px-2.5  block m-auto rounded-full bg-black dark:bg-white left-5 bottom-14 duration-[0.2s] ease-in-out hover:ring hover:ring-redPrimary/70 hover:border-2 dark:hover:border-black ">
-            <div class="h-full flex items-center text-center justify-center">
-                <div class=" flex items-center text-center overflow-x-hidden">
-                    <input type="checkbox" class="hidden" id="dark-toggle" />
-                                <label for="dark-toggle" class="flex flex-row justify-center text-center items-center">
-                                    <li class="text-xl items-center font-medium dark:block dark:text-black hidden text-white ">
-                                        <i class="fa-solid fa-sun"></i>
-                                    </li>
-                                    <li class="text-xl items-center font-medium list-none dark:hidden text-white "><i
-                                            class="fa-solid fa-moon"></i></li>
-                                            <!-- <h1 class="text-white dark:text-black font-normal text-base ml-2">Night/Day</h1> -->
-                                </label>
-
+        <aside id="darkmode"
+                class="hidden fixed py-1.5 px-[13px] dark:px-2.5 m-auto border-4 border-white dark:border-black rounded-full bg-black dark:bg-white left-5 bottom-14 duration-[0.2s] ease-in-out hover:ring hover:ring-redPrimary/70 z-50   ">
+                <div class="h-full flex items-center text-center justify-center">
+                    <div class=" flex items-center text-center overflow-x-hidden">
+                        <input type="checkbox" class="hidden" id="dark-toggle" />
+                        <label for="dark-toggle" class="flex flex-row justify-center text-center items-center">
+                            <li class="text-xl items-center font-medium dark:block dark:text-black hidden text-white ">
+                                <i class="fa-solid fa-sun"></i>
+                            </li>
+                            <li class="text-xl items-center font-medium list-none dark:hidden text-white "><i
+                                    class="fa-solid fa-moon"></i></li>
+                            <!-- <h1 class="text-white dark:text-black font-normal text-base ml-2">Night/Day</h1> -->
+                        </label>
+    
+                    </div>
+                    <!-- <div class="">
+                        
+                    </div> -->
                 </div>
-                <!-- <div class="">
-                    
-                </div> -->
-            </div>
-        </aside>
+            </aside>
 
         <div class="">
             <div class="w-screen mx-auto h-[700px] top-0 ">
@@ -328,72 +332,109 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
+                integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+                crossorigin="anonymous" referrerpolicy="no-referrer">
+                </script>
 
-
-    <script>
-        function Menu(e) {
-            let list = document.querySelector('ul');
-            e.name === 'menu' ? (e.name = "close", list.classList.
-                add('top-[60px]'), list.classList.add('opacity-100'))
-                : (e.name = "menu", list.classList.remove('top-[60px]'),
-                    list.classList.remove('opacity-100'))
-        }
-
-
-        // const imgDiv = document.querySelector('#userImg');
-        // const img = document.querySelector('#photo');
-        // const file = document.querySelector('#file')
-        // const upload = document.querySelector('#upload');
-
-        // file.addEventListener('change',function(){
-        //     const chosedfile = this.file[0];
-        //     if(chosedfile){
-        //         const reader = new FileReader();
-
-        //         reader.addEventListener('load', function(){
-        //             img.setAttribute('src' , reader.result);
-        //         })
-        //     reader.readAsDataURL(chosedfile);
-        //     }
-        // })
-
-
-    
-
-        const darkToggle = document.querySelector('#dark-toggle');
-        const html = document.querySelector('html');
-
-        darkToggle.addEventListener('click', function () {
-            if (darkToggle.checked) {
-                html.classList.add('dark');
-                localStorage.theme = 'dark';
-            } else {
-                html.classList.remove('dark');
-                localStorage.theme = 'light';
+        <script>
+            function Menu(e) {
+                let list = document.querySelector('ul');
+                e.name === 'menu' ? (e.name = "close", list.classList.
+                    add('top-[60px]'), list.classList.add('opacity-100'))
+                    : (e.name = "menu", list.classList.remove('top-[60px]'),
+                        list.classList.remove('opacity-100'))
             }
-        });
 
-        window.onscroll = function () {
-            menu()
-        };
 
-        
+            // const imgDiv = document.querySelector('#userImg');
+            // const img = document.querySelector('#photo');
+            // const file = document.querySelector('#file')
+            // const upload = document.querySelector('#upload');
 
-        $(window).on('load', function () {
+            // file.addEventListener('change',function(){
+            //     const chosedfile = this.file[0];
+            //     if(chosedfile){
+            //         const reader = new FileReader();
 
-        $('.spin-wrapper').fadeOut();
+            //         reader.addEventListener('load', function(){
+            //             img.setAttribute('src' , reader.result);
+            //         })
+            //     reader.readAsDataURL(chosedfile);
+            //     }
+            // })
 
-        $(setTimeout(() => {
-    
-            }, 10))
+
+
+
+            const darkToggle = document.querySelector('#dark-toggle');
+            const html = document.querySelector('html');
+
+            darkToggle.addEventListener('click', function () {
+                if (darkToggle.checked) {
+                    html.classList.add('dark');
+                    localStorage.theme = 'dark';
+                } else {
+                    html.classList.remove('dark');
+                    localStorage.theme = 'light';
+                }
             });
 
+            window.onscroll = function () {
+                menu()
+                dark()
+            };
+
+            function menu() {
+                if (document.documentElement.scrollTop > 650) {
+                    document.getElementById("navbar").classList.add("md:bg-black")
+                    document.getElementById("navbar").classList.remove("md:bg-transparent")
+                    document.getElementById("navbar").classList.add("md:w-screen")
+                    document.getElementById("navbar").classList.remove("md:w-full")
+                    document.getElementById("navbar").classList.add("md:pl-10")
+                    document.getElementById("navbar").classList.remove("md:pl-0")
+                    document.getElementById("navbar").classList.add("md:pr-10")
+                    document.getElementById("navbar").classList.remove("md:pr-0")
+                    document.getElementById("navbar").classList.remove("md:border-b")
+                } else {
+                    document.getElementById("navbar").classList.remove("md:bg-black")
+                    document.getElementById("navbar").classList.add("md:bg-transparent")
+                    document.getElementById("navbar").classList.remove("md:w-screen")
+                    document.getElementById("navbar").classList.add("md:w-full")
+                    document.getElementById("navbar").classList.remove("md:pl-10")
+                    document.getElementById("navbar").classList.add("md:pl-0")
+                    document.getElementById("navbar").classList.remove("md:pr-10")
+                    document.getElementById("navbar").classList.add("md:pr-0")
+                    document.getElementById("navbar").classList.add("md:border-b")
+                }
+            }
+
+            function dark() {
+                if (document.documentElement.scrollTop > 100) {
+                    document.getElementById("darkmode").classList.add("block")
+                    document.getElementById("darkmode").classList.remove("hidden")
+                } else {
+                    document.getElementById("darkmode").classList.remove("block")
+                    document.getElementById("darkmode").classList.add("hidden")
+                }
+            }
+
+            $(window).on('load', function () {
+
+                $('.spin-wrapper').fadeOut();
+
+                $(setTimeout(() => {
+
+                }, 10))
+            });
+
+        </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
-    <script src="JobLancer.js"></script>
+        <script src="JobLancer.js"></script>
 </body>
 
 </html>

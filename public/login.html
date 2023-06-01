@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/output.css">
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <title>Login</title>
+    </head>
+</head>
+
+<body class="scroll-smooth font-quicksand">
+    <div class="bg-[url('/assets/img/login.png')] w-2/4 bg-center text-white bg-blend-multiply bg-black/50 float-right bg-cover h-screen">
+        <div class="px-3 py-5">
+            <span class="font-semibold  float-right text-3xl flex items-center ">Job<p class="text-red-700 text-3xl">Lancers</p></span>
+
+    </div>
+</div>
+
+    <div class="flex flex-col gap-20 py-14">
+        <span class="font-semibold text-5xl flex justify-center">Login</span>
+        <div class="flex flex-col items-center gap-6">
+            <div>
+                <label for="email" class="block mb-2 text-lg font-medium text-gray-900">email</label>
+                <input type="email" name="email" id="email"
+                    class="bg-gray-50 border outline-none text-gray-900 sm:text-sm rounded-lg block w-[381px] p-3"
+                    placeholder="Enter your email here" />
+                <p class="text-red-600 font-medium text-sm" id="email-alert"></p>
+            </div>
+            <div>
+                <label for="password" class="block mb-2 text-lg font-medium text-gray-900">Password</label>
+                <input type="password" name="password" id="password"
+                    class="bg-gray-50 border outline-none text-gray-900 sm:text-sm rounded-lg block w-[381px] p-3"
+                    placeholder="Enter your password here" />
+                <p class="text-red-600 font-medium text-sm" id="password-alert"></p>
+            </div>
+
+            <button onclick="index()" class="bg-red-500 font-bold text-lg text-white rounded-lg  mx-auto w-[200px] h-12">Login</button>
+        </div>
+    </div>
+    <div class="flex-col flex gap-16">
+        <div class="flex flex-col gap-5">
+            <div class="flex gap-3 items-center justify-center">
+                <div class="bg-gray-400 h-[1px] w-[142px]"></div>
+                <span class="font-medium text-lg">or login with</span>
+                <div class="bg-gray-400 h-[1px] w-[142px]"></div>
+
+            </div>
+            <div class="flex gap-4 justify-center items-center">
+                <div class="cursor-pointer w-[50px] h-[50px] flex items-center justify-center bg-gray-100 rounded-full">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1176px-Google_%22G%22_Logo.svg.png"
+                        alt="" class="w-8 h-8">
+                </div>
+                <div class=" cursor-pointer w-[50px] h-[50px] flex items-center justify-center bg-gray-100 rounded-full">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt=""
+                        class="w-8 h-8">
+                </div>
+                <div class="cursor-pointer w-[50px] h-[50px] flex items-center justify-center bg-gray-100 rounded-full">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/976px-Apple_logo_black.svg.png?20220821121934"
+                        alt="" class="w-7 h-8">
+                </div>
+            </div>
+        </div>
+        <span class="font-medium w-full text-lg flex items-center justify-center">Didn’t have an account? <a href="#"
+                class="font-bold px-1"> Sign Up</a> Here</span>
+    </div>
+
+
+
+    <script>
+        function validateEmail(value) {
+            if (/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(value)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function index() {
+            let valueEmail = document.getElementById("email").value;
+            let valuePassword = document.getElementById("password").value;
+
+            let alertEmail = document.getElementById("email-alert");
+            let alertPassword = document.getElementById("password-alert");
+
+            if (validateEmail(valueEmail)) {
+                // code validate email benar
+                if (valuePassword !== "") {
+                    // code berhasil
+                    window.location.href = "home.html";
+                } else {
+                    //code validate email benar, tetapi password salah
+                    alertPassword.innerHTML = "salah bangs";
+                    alertEmail.innerHTML = "";
+                }
+            } else {
+                // code validate email salah
+                alertEmail.innerHTML = "masukan email yang benar";
+
+                if (valuePassword !== "") {
+                    // code validate email salah, tetapi password benar
+                    alertPassword.innerHTML = "";
+                } else {
+                    // code validate email salah, dan password salah
+                    alertPassword.innerHTML = "salah bangs";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
