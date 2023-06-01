@@ -15,6 +15,43 @@
     </div>
 </body>
 
+<footer>
+    <div>
+        <form action="" name="contact-us">
+            <div class="w-screen h-[40rem] px-10 bg-gray-500 flex flex-col justify-center items-center">
+                <h1 class="font-semibold text-2xl text-white mb-10">Customer Service</h1>
+                <div class="flex flex-row gap-7 ">
+                    <div class="">
+                        <label for="email" class="flex flex-col text-white font-medium text-base md:text-xl pb-2">Email</label>
+                        <input type="email" name="email" id="email" class="w-[20rem] h-[3rem] rounded-xl px-3 py-3">
+                    </div>                 
+                    <div class="">
+                        <label for="name" class="flex flex-col w-max text-white font-medium text-base md:text-xl pb-2">Name</label>
+                        <input type="name" name="name" id="name" class="w-[20rem] h-[3rem] rounded-xl px-3 py-3">
+                    </div>
+                </div>                
+                <div class="mt-6 mb-5">
+                    <label for="message" class="flex flex-col text-white font-medium text-base md:text-xl pb-2">message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" class="w-[42rem] rounded-xl px-5 py-3"></textarea>
+                </div>
+                <button class="w-[42rem] rounded-lg hover:bg-black bg-redPrimary hover:text-redPrimary text-black font-medium h-[3rem] duration-1000">Submit</button>
+            </div>
+        </form>
+    </div>
+</footer>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyB9fVvFnTIcuBz-0iZoWbblq-Inr9R7b-IfuwrNYc1IHkSyNfsEjDp-PwVBQGPc0GkWw/exec'
+    const form = document.forms['contact-us']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
 <script>
     const imgDiv = document.querySelector('.profile-pic-div');
     const img = document.querySelector('#photo');
