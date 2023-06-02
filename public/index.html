@@ -1,20 +1,440 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <title>joblancers</title>
 </head>
-<body>
-    <div class="">
-        <form action="../validasi/index.html" method="GET">
-            <h1>Login</h1>
-            <input id="username" type="email" name="email" placeholder="Username" required />
-            <input id="password" type="password" name="password" placeholder="Password" required />
-            <p id="errorMessage" hidden></p>
-            <input type="submit" value="SUBMIT" />
-          </form>
+
+<body class="font-montserrat overflow-x-hidden  dark:bg-darkbg">
+    <div class="spin-wrapper h-screen flex justify-center items-center bg-gray-600"> 
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-50 h-20 animate-bounce"
+            viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+                d="M54.2 202.9C123.2 136.7 216.8 96 320 96s196.8 40.7 265.8 106.9c12.8 12.2 33 11.8 45.2-.9s11.8-33-.9-45.2C549.7 79.5 440.4 32 320 32S90.3 79.5 9.8 156.7C-2.9 169-3.3 189.2 8.9 202s32.5 13.2 45.2 .9zM320 256c56.8 0 108.6 21.1 148.2 56c13.3 11.7 33.5 10.4 45.2-2.8s10.4-33.5-2.8-45.2C459.8 219.2 393 192 320 192s-139.8 27.2-190.5 72c-13.3 11.7-14.5 31.9-2.8 45.2s31.9 14.5 45.2 2.8c39.5-34.9 91.3-56 148.2-56zm64 160a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+        </svg>
     </div>
+
+    <div class="bg-[url('/assets/img/header1.png')] h-screen bg-blend-multiply bg-black/80 bg-cover bg-bottom w-screen">
+
+
+
+        <div class="flex justify-center" id="">
+            <header class="top-0 fixed z-50">
+                <nav
+                    class="py-5 pl-10 pr-10 md:pl-0 md:pr-0 md:pt-3 gap-64 bg-black md:bg-transparent shadow md:flex md:justify-between md:items-center w-screen md:w-full pb-0 md:pb-1  md:border-b " id="navbar">
+                    <div class="flex justify-between items-center text-white pb-5 md:pb-0 mb-10 md:mb-3 ">
+                        <h1 class="md:text-4xl text-3xl text-white font-normal">Job<span
+                                class=" text-redPrimary">Lancers</span></h1>
+                        <div class="text-3xl cursor-pointer md:hidden block mx-2 my-auto">
+                            <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                        </div>
+                    </div>
+
+                    <ul
+                    class="flex flex-col md:flex-row md:items-center gap-4 z-[1] md:z-auto md:static absolute bg-black md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
+                    <li class="mx-1">
+                        <a href="index.html"
+                            class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Home</a>
+                    </li>
+                    <li class="mx-1">
+                        <a href="NoLoginfindjobs.html"
+                            class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Find
+                            Jobs</a>
+                    </li>
+                    <li class="mx-1">
+                        <a href="NoLoginabout.html"
+                            class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">About
+                            Us</a>
+                    </li>
+                    <!-- <div class="mx-1">
+                        <li class="">
+                            <div class="" id="userImg">
+                                <a href="">
+                                     <img src="../assets/img/pp.png" alt="" class="w-10 rounded-full border-2" id="photo">
+    
+                                </a>
+                                 <input type="file" id="file" class="hidden">
+                                <label for="file" id="upload" class="absolute h-[30px] w-[30px] p-[6px_6px] rounded-[50%] cursor-pointer text-white bg-gray-500 shadow"><i class="fa-solid fa-camera"></i></label>
+                            </div>
+                        </li>
+
+                    </div> -->
+                    <a href="signup.html">
+                        <button class="bg-redPrimary w-28 px-5 py-2 text-white hover:bg-transparent font-medium hover:border-redPrimary hover:ring rounded-full transition-all duration-75">
+                            Sign Up
+                        </button>
+                    </a>
+                    <a href="login.html">
+                        <button class="bg-white border-2 border-redPrimary w-28 px-5 py-2 text-black font-medium hover:text-white hover:bg-transparent hover:border-redPrimary hover:ring rounded-full transition-all duration-75">
+                            Login
+                        </button>
+                    </a>
+                    
+                </ul>
+                            
+                            
+                        
+                        
+                </nav>
+            </header>
+        </div>
+
+        <aside id="darkmode"
+                class="hidden fixed py-1.5 px-[13px] dark:px-2.5 m-auto border-4 border-white dark:border-black rounded-full bg-black dark:bg-white left-5 bottom-14 duration-[0.2s] ease-in-out hover:ring hover:ring-redPrimary/70 z-50   ">
+                <div class="h-full flex items-center text-center justify-center">
+                    <div class=" flex items-center text-center overflow-x-hidden">
+                        <input type="checkbox" class="hidden" id="dark-toggle" />
+                        <label for="dark-toggle" class="flex flex-row justify-center text-center items-center">
+                            <li class="text-xl items-center font-medium dark:block dark:text-black hidden text-white ">
+                                <i class="fa-solid fa-sun"></i>
+                            </li>
+                            <li class="text-xl items-center font-medium list-none dark:hidden text-white "><i
+                                    class="fa-solid fa-moon"></i></li>
+                            <!-- <h1 class="text-white dark:text-black font-normal text-base ml-2">Night/Day</h1> -->
+                        </label>
+    
+                    </div>
+                    <!-- <div class="">
+                        
+                    </div> -->
+                </div>
+            </aside>
+
+        <div class="">
+            <div class="w-screen mx-auto h-[700px] top-0 ">
+                <div class="pt-48 gap-8 flex justify-center text-center flex-col ">
+                    <h2 class="text-white font-medium text-base md:text-xl"><span class="typedjs"><br></span></h2>
+                </div>
+                <div class="pt-10 gap-8 flex justify-center text-center flex-col">
+                    <h2 class="text-white font-semibold text-xl md:text-4xl">Connecting You with <br>
+                        the Best Freelance Opportunities.</h2>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <main>
+        <section id="homePage">
+            <div class="mb-auto">
+                <div class="py-10">
+                    <div class="py-10 flex justify-center flex-col w-full h-full items-center text-center">
+                        <h1 class="text-3xl md:text-5xl font-bold text-center my-10 dark:text-white"> <span class="text-redPrimary"> Hello </span>
+                            There!
+                        </h1>
+
+                        <p class="text-sm dark:text-white md:text-xl leading-relaxed md:leading-loose font-medium justify-center text-center w-fit md:w-7/12">
+                            We are proud to be part of the innovative and dynamic freelance world. At JobLacers, we
+                            offer
+                            the
+                            right freelance solutions for your needs. Join us and find the best way to achieve your
+                            goals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="py-10">
+                    <div class="bg-slate-500/10 py-10 flex md:flex-row flex-col w-screen h-full justify-between ">
+                        <p class=" text-sm dark:text-white md:text-xl leading-relaxed md:leading-loose font-medium mx-auto flex text-center md:text-left items-center justify-center w-fit md:w-7/12 h-fit my-10 md:my-auto order-2 md:order:1 ">
+                            At Joblancers, we are thrilled to have you join us in this exciting journey  where
+                            freelancers and clients come together to shape the future of work.  Step into a world
+                            where
+                            talent meets opportunity, where creativity  knows no bounds, and where passion drives
+                            innovation.
+                        </p>
+                        <img src="../assets/img/home1.png" alt="" srcset="" class=" w-screen md:w-96 md:h-auto h-auto md:rounded-l-xl order-1 md:order-2 ">
+                    </div>
+                    <div class=" py-10 flex  md:flex-row flex-col justify-between w-full h-full">
+                        <img src="../assets/img/home2.png" alt="" class=" w-screen md:w-96 md:h-auto h-auto md:rounded-r-xl">
+                        <p
+                            class="text-sm dark:text-white md:text-xl leading-relaxed md:leading-loose font-medium mx-auto flex  items-center justify-center h-fit w-fit md:w-7/12 my-10 md:my-auto text-center md:text-right">
+                            Our mission is to empower freelancers by providing them  with a platform to showcase
+                            their
+                            skills, connect with clients  from around the globe, and build long-lasting professional
+                            
+                            relationships. We believe in fostering a supportive and  collaborative community where
+                            freelancers can thrive, learn  from each other, and expand their horizons.
+                        </p>
+                    </div>
+                    <div class="bg-slate-500/10 py-10 flex  md:flex-row flex-col  w-full h-full justify-between ">
+                        <p class=" text-sm dark:text-white md:text-xl leading-relaxed md:leading-loose font-medium mx-auto flex text-center md:text-l  eft items-center justify-center w-fit md:w-7/12 h-fit my-10 md:my-auto order-2 md:order:1">
+                            We are committed to excellence, professionalism, and  utmost customer satisfaction. As
+                            you
+                            embark on your  freelance journey or explore new avenues for your business, 
+                            Joblancers will
+                            be your trusted partner, providing the  support, resources, and opportunities you need
+                            to
+                            succeed.
+                        </p>
+                        <img src="../assets/img/home3.png" alt="" srcset="" class="w-screen md:w-96 md:h-auto h-auto md:rounded-l-xl order-1 md:order-2">
+                    </div>
+
+                    <div class="bg-[url(/assets/img/home4.png)] bg-cover bg-center w-full h-[548px]">
+                        <div class=" py-10 flex  w-full h-full justify-center items-center text-center">
+                            <p class="text-sm md:text-xl leading-relaxed md:leading-loose text-white font-medium mx-auto items-center justify-center w-fit md:w-7/12 h-fit my-auto text-center">
+                                Thank you for visiting Joblancers. We invite you to immerse  yourself in our vibrant
+                                community, discover the remarkable  talent we have to offer, and experience the
+                                transformative  power of freelance collaboration. Together, let's embark on  a remarkable
+                                journey of growth, success, and endless possibilities! 
+                                <br><br>
+                                <span class="font-light" style="font-style: italic;">Zefa Hudzaifah  - CEO & Founder of JobLancers </span> 
+                            </p>
+                           
+                        </div>
+    
+                    </div>
+                </div>
+
+                
+            </div>
+            </div>
+        </section>
+
+        <!-- <section id="slider">
+            <div class="max-w-[1100px] w-full relative">
+                <div class="top-[50%] h-[50px] w-[50px] cursor-pointer text-[1.25rem] absolute text-center leading-[50px] bg-white rounded-[50%] shadow-[0_3px_6px_rgba(0,0,0,0.23)] translate-y-[-50%] transition duration-[0.1s] ease-linear active:translate-y-[-50%] scale-[0.85] first:left-[-22px] last:right-[-22px] ">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                </div>
+                 
+                <ul class="grid grid-flow-col auto-cols-[calc((100%_/_ 3) - 12px)] overflow-x-auto ">
+                  <li class="card">
+                    <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+                    <h2>Blanche Pearson</h2>
+                    <span>Sales Manager</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/img-2.jpg" alt="img" draggable="false"></div>
+                    <h2>Joenas Brauers</h2>
+                    <span>Web Developer</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/img-3.jpg" alt="img" draggable="false"></div>
+                    <h2>Lariach French</h2>
+                    <span>Online Teacher</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/img-4.jpg" alt="img" draggable="false"></div>
+                    <h2>James Khosravi</h2>
+                    <span>Freelancer</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/img-5.jpg" alt="img" draggable="false"></div>
+                    <h2>Kristina Zasiadko</h2>
+                    <span>Bank Manager</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/img-6.jpg" alt="img" draggable="false"></div>
+                    <h2>Donald Horton</h2>
+                    <span>App Designer</span>
+                  </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
+        </section> -->
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="w-screen h-[16rem] md:h-[21rem] bg-black px-10 md:px-24 pb-4 flex">
+            <div class="pt-10 md:pt-20 ">
+               <h5 class="font-bold text-xl md:text-4xl text-white">Job<span class="text-redPrimary">Lancers</span></h5>
+               <p class="font-light text-lg md:text-3xl text-white mb-5">follow our social media</p>
+               <div class="text-white text-xl md:text-4xl w-full pb-20 flex flex-row gap-5 md:gap-10 duration-75">
+                    <a href="">
+                        <i class="fa-brands fa-facebook hover:animate-bounce hover:text-redPrimary"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram hover:animate-bounce hover:text-redPrimary"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter hover:animate-bounce hover:text-redPrimary"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-github hover:animate-bounce hover:text-redPrimary"></i>
+                    </a>
+                    
+                    
+                    
+                    
+               </div>   
+            </div>
+            <div class="flex w-full justify-end flex-row gap-5 md:gap-52 pt-10 md:pt-20">
+                <div class=" text-center flex flex-col gap-5">
+                    <h5 class="text-white font-semibold text-lg md:text-2xl underline">Links</h5>
+                    <a href="home.html">
+                        <p class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Home</p>
+                    </a>
+                    <a href="findjobs.html">
+                        <p class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Find Jobs</p>
+                    </a>
+                    <a href="about.html">
+                         <p class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">About Us</p>
+                    </a>
+                   
+                </div>
+                <div class="text-center flex flex-col gap-5">
+                    <h5 class="text-white font-semibold text-lg md:text-2xl underline">Contact</h5>
+                    <a href="@alfaruky67@gmail.com">
+                         <p class="text-white font-light text-sm md:text-xl  duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">@alfaruky67@Gmail.com</p>
+                    </a>
+                   <a href="wa.me/62812345678910">
+                        <p class="text-white font-light text-sm md:text-xl  duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">+62 8123-4567-8910</p>
+                   </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-white h-[1px]">           
+        </div>
+        <div class="w-screen bg-black md:h-[10rem] px-10 py-10">
+            <p class="text-center text-white font-light text-xs md:text-xl">© 2023 Joblancers. Is a registered Trademark of  Joblancers Professional Services Corporation All rights reserved. 
+                This website and its content are protected by copyright law </p>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+                integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+                crossorigin="anonymous" referrerpolicy="no-referrer">
+                </script>
+
+        <script>
+            function Menu(e) {
+                let list = document.querySelector('ul');
+                e.name === 'menu' ? (e.name = "close", list.classList.
+                    add('top-[60px]'), list.classList.add('opacity-100'))
+                    : (e.name = "menu", list.classList.remove('top-[60px]'),
+                        list.classList.remove('opacity-100'))
+            }
+
+
+            // const imgDiv = document.querySelector('#userImg');
+            // const img = document.querySelector('#photo');
+            // const file = document.querySelector('#file')
+            // const upload = document.querySelector('#upload');
+
+            // file.addEventListener('change',function(){
+            //     const chosedfile = this.file[0];
+            //     if(chosedfile){
+            //         const reader = new FileReader();
+
+            //         reader.addEventListener('load', function(){
+            //             img.setAttribute('src' , reader.result);
+            //         })
+            //     reader.readAsDataURL(chosedfile);
+            //     }
+            // })
+
+
+
+
+            const darkToggle = document.querySelector('#dark-toggle');
+            const html = document.querySelector('html');
+
+            darkToggle.addEventListener('click', function () {
+                if (darkToggle.checked) {
+                    html.classList.add('dark');
+                    localStorage.theme = 'dark';
+                } else {
+                    html.classList.remove('dark');
+                    localStorage.theme = 'light';
+                }
+            });
+
+            window.onscroll = function () {
+                menu()
+                dark()
+            };
+
+            function menu() {
+                if (document.documentElement.scrollTop > 650) {
+                    document.getElementById("navbar").classList.add("md:bg-black")
+                    document.getElementById("navbar").classList.remove("md:bg-transparent")
+                    document.getElementById("navbar").classList.add("md:w-screen")
+                    document.getElementById("navbar").classList.remove("md:w-full")
+                    document.getElementById("navbar").classList.add("md:pl-10")
+                    document.getElementById("navbar").classList.remove("md:pl-0")
+                    document.getElementById("navbar").classList.add("md:pr-10")
+                    document.getElementById("navbar").classList.remove("md:pr-0")
+                    document.getElementById("navbar").classList.remove("md:border-b")
+                } else {
+                    document.getElementById("navbar").classList.remove("md:bg-black")
+                    document.getElementById("navbar").classList.add("md:bg-transparent")
+                    document.getElementById("navbar").classList.remove("md:w-screen")
+                    document.getElementById("navbar").classList.add("md:w-full")
+                    document.getElementById("navbar").classList.remove("md:pl-10")
+                    document.getElementById("navbar").classList.add("md:pl-0")
+                    document.getElementById("navbar").classList.remove("md:pr-10")
+                    document.getElementById("navbar").classList.add("md:pr-0")
+                    document.getElementById("navbar").classList.add("md:border-b")
+                }
+            }
+
+            function dark() {
+                if (document.documentElement.scrollTop > 100) {
+                    document.getElementById("darkmode").classList.add("block")
+                    document.getElementById("darkmode").classList.remove("hidden")
+                } else {
+                    document.getElementById("darkmode").classList.remove("block")
+                    document.getElementById("darkmode").classList.add("hidden")
+                }
+            }
+
+            $(window).on('load', function () {
+
+                $('.spin-wrapper').fadeOut();
+
+                $(setTimeout(() => {
+
+                }, 10))
+            });
+
+        </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+        <script src="JobLancer.js"></script>
 </body>
+
 </html>

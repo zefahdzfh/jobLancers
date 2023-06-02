@@ -7,3 +7,6 @@ var typed = new Typed('.typedjs', {
     backSpeed: 60,
     loop: true,
   });
+
+
+  

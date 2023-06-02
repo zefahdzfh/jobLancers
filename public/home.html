@@ -20,7 +20,7 @@
     <title>joblancers</title>
 </head>
 
-<body class="font-montserrat  dark:bg-darkbg">
+<body class="font-montserrat overflow-x-hidden  dark:bg-darkbg">
     <div class="spin-wrapper h-screen flex justify-center items-center bg-gray-600"> 
         <svg xmlns="http://www.w3.org/2000/svg" class="w-50 h-20 animate-bounce"
             viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -29,14 +29,14 @@
         </svg>
     </div>
 
-    <div class="bg-[url('/assets/img/header.jpg')] bg-blend-multiply bg-black/80 bg-cover bg-center">
+    <div class="bg-[url('/assets/img/header1.png')] h-screen bg-blend-multiply bg-black/80 bg-cover bg-bottom w-screen">
 
 
 
-        <div class="flex justify-center" id="navbar">
-            <header class="top-0 ">
+        <div class="flex justify-center" id="">
+            <header class="top-0 fixed z-50">
                 <nav
-                    class=" py-5 pl-10 pr-10 md:pl-0 md:pr-0 md:pt-3 gap-96 bg-black md:bg-transparent shadow md:flex md:justify-between md:items-center w-screen md:w-full pb-0 md:pb-1  md:border-b">
+                    class="py-5 pl-10 pr-10 md:pl-0 md:pr-0 md:pt-3 gap-64 bg-black md:bg-transparent shadow md:flex md:justify-between md:items-center w-screen md:w-full pb-0 md:pb-1  md:border-b " id="navbar">
                     <div class="flex justify-between items-center text-white pb-5 md:pb-0 mb-10 md:mb-3 ">
                         <h1 class="md:text-4xl text-3xl text-white font-normal">Job<span
                                 class=" text-redPrimary">Lancers</span></h1>
@@ -46,7 +46,7 @@
                     </div>
 
                     <ul
-                        class="flex flex-col md:flex-row md:items-center gap-4 z-[1] md:z-auto md:static absolute bg-black md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
+                        class="flex flex-col md:flex-row md:items-center gap-4 z-[1] md:z-auto md:static absolute bg-black md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 mr-10">
                         <li class="mx-1">
                             <a href="home.html"
                                 class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Home</a>
@@ -61,26 +61,53 @@
                                 class="text-lg font-medium text-white duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">About
                                 Us</a>
                         </li>
-                        <div class="mx-1">
-                            <li class="">
-                                <div class="" id="userImg">
+                        
+                    </ul>
+                        <div class="mx-1 flex flex-row gap-5">
+                            <div class="">
+                                <div class="relative mb-4 flex w-full flex-wrap items-stretch">
+                                  <input
+                                    type="search"
+                                    class="relative m-0 block w-[150px] min-w-0 flex-auto rounded border border-solid bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6]  outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-200 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none border-neutral-200 text-neutral-200 placeholder:text-neutral-100 dark:focus:border-primary"
+                                    placeholder="Search"
+                                    aria-label="Search"
+                                    aria-describedby="button-addon2" />
+                              
+                                  <!--Search icon-->
+                                  <span
+                                    class="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
+                                    id="basic-addon2">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 20 20"
+                                      fill="white"
+                                      class="h-5 w-5">
+                                      <path
+                                        fill-rule="evenodd"
+                                        d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                        clip-rule="evenodd" />
+                                    </svg>
+                                  </span>
+                                </div>
+                              </div>
+                           
+                            <div class="" id="userImg">
                                     <a href="">
                                          <img src="../assets/img/pp.png" alt="" class="w-10 rounded-full border-2" id="photo">
         
                                     </a>
                                     <!-- <input type="file" id="file" class="hidden">
                                     <label for="file" id="upload" class="absolute h-[30px] w-[30px] p-[6px_6px] rounded-[50%] cursor-pointer text-white bg-gray-500 shadow"><i class="fa-solid fa-camera"></i></label> -->
-                                </div>
-                            </li>
-
+                            </div>
+                            
+                            
                         </div>
-                    </ul>
-
+                        
                 </nav>
             </header>
         </div>
 
-        <aside class="fixed py-1.5 px-[13px] dark:px-2.5  block m-auto rounded-full bg-black dark:bg-white left-5 bottom-14 duration-[0.2s] ease-in-out hover:ring hover:ring-redPrimary/70 hover:border-2 dark:hover:border-black ">
+        <aside id="darkmode" class="hidden fixed py-1.5 px-[13px] dark:px-2.5 m-auto border-4 border-white dark:border-black rounded-full bg-black dark:bg-white left-5 bottom-14 duration-[0.2s] ease-in-out hover:ring hover:ring-redPrimary/70 z-50   ">
             <div class="h-full flex items-center text-center justify-center">
                 <div class=" flex items-center text-center overflow-x-hidden">
                     <input type="checkbox" class="hidden" id="dark-toggle" />
@@ -100,9 +127,9 @@
             </div>
         </aside>
 
-        <div class="">
-            <div class="w-screen mx-auto h-[700px] top-0 ">
-                <div class="pt-48 gap-8 flex justify-center text-center flex-col ">
+        <div class="my-auto">
+            <div class="w-screen my-64 mx-auto top-0 ">
+                <div class=" gap-8 flex justify-center text-center flex-col ">
                     <h2 class="text-white font-medium text-base md:text-xl"><span class="typedjs"><br></span></h2>
                 </div>
                 <div class="pt-10 gap-8 flex justify-center text-center flex-col">
@@ -111,6 +138,8 @@
                 </div>
             </div>
         </div>
+
+
 
 
     </div>
@@ -247,6 +276,34 @@
 
     </main>
 
+
+    <!-- <section id="contact">
+        <div class="w-screen p-5 ">
+            <h1 class="text-white font-semibold text-xl md:text-4xl">Contact Us</h1>
+            <p class="text-white font-medium text-base md:text-xl">Anything that you want to ask with us? Just wrote your messages down here !</p>
+            <div class></div>
+            <form action="">
+                <div class="">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+            </form>
+            <form action="">
+                <div class="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+            </form>
+            <form action="">
+                <div class="">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section> -->
+
+
     <footer>
         <div>
             <form action="" name="contact-us">
@@ -274,31 +331,55 @@
             <div class="pt-10 md:pt-20 ">
                <h5 class="font-bold text-xl md:text-4xl text-white">Job<span class="text-redPrimary">Lancers</span></h5>
                <p class="font-light text-lg md:text-3xl text-white mb-5">follow our social media</p>
-               <div class="text-white text-xl md:text-4xl w-full pb-20 flex flex-row gap-5 md:gap-10">
-                    <i class="fa-brands fa-facebook hover:animate-bounce"></i>
-                    <i class="fa-brands fa-instagram hover:animate-bounce"></i>
-                    <i class="fa-brands fa-twitter hover:animate-bounce"></i>
-                    <i class="fa-brands fa-github hover:animate-bounce"></i>
+               <div class="text-white text-xl md:text-4xl w-full pb-20 flex flex-row gap-5 md:gap-10 duration-75">
+                    <a href="">
+                        <i class="fa-brands fa-facebook hover:animate-bounce hover:text-redPrimary"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram hover:animate-bounce hover:text-redPrimary"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter hover:animate-bounce hover:text-redPrimary"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-github hover:animate-bounce hover:text-redPrimary"></i>
+                    </a>
+                    
+                    
+                    
+                    
                </div>   
             </div>
-            <div class="flex w-full justify-end flex-row gap-20 md:gap-52 pt-10 md:pt-20">
+            <div class="flex w-full justify-end flex-row gap-5 md:gap-52 pt-10 md:pt-20">
                 <div class=" text-center flex flex-col gap-5">
-                    <h5 class="text-white font-bold text-xl md:text-3xl underline">Links</h5>
-                    <p class="text-white font-light text-lg md:text-2xl">Home</p>
-                    <p class="text-white font-light text-lg md:text-2xl">Find Jobs</p>
-                    <p class="text-white font-light text-lg md:text-2xl">About Us</p>
+                    <h5 class="text-white font-semibold text-lg md:text-2xl underline">Links</h5>
+                    <a href="home.html">
+                        <p class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Home</p>
+                    </a>
+                    <a href="findjobs.html">
+                        <p class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Find Jobs</p>
+                    </a>
+                    <a href="about.html">
+                         <p class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">About Us</p>
+                    </a>
+                   
                 </div>
                 <div class="text-center flex flex-col gap-5">
-                    <h5 class="text-white font-bold text-xl md:text-3xl underline">Contact</h5>
-                    <p class="text-white font-light text-lg md:text-2xl">@alfaruky67@Gmail.com</p>
-                    <p class="text-white font-light text-lg md:text-2xl">+62 8123-4567-8910</p>
+                    <h5 class="text-white font-semibold text-lg md:text-2xl underline">Contact</h5>
+                    <a href="@alfaruky67@gmail.com">
+                         <p class="text-white font-light text-sm md:text-xl  duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">@alfaruky67@Gmail.com</p>
+                    </a>
+                   <a href="wa.me/62812345678910">
+                        <p class="text-white font-light text-sm md:text-xl  duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">+62 8123-4567-8910</p>
+                   </a>
+                    
                 </div>
             </div>
         </div>
         <div class="w-full bg-white h-[1px]">           
         </div>
-        <div class="w-full bg-black md:h-[10rem] px-1 md:px-96 py-10">
-            <p class="text-center text-white font-light text-xs md:text-2xl">© 2023 Joblancers. Is a registered Trademark of  Joblancers Professional Services Corporation All rights reserved. 
+        <div class="w-screen bg-black md:h-[10rem] px-10 py-10">
+            <p class="text-center text-white font-light text-xs md:text-xl">© 2023 Joblancers. Is a registered Trademark of  Joblancers Professional Services Corporation All rights reserved. 
                 This website and its content are protected by copyright law </p>
 
         </div>
@@ -327,7 +408,7 @@
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
-
+    
 
     <script>
         function Menu(e) {
@@ -374,13 +455,40 @@
 
         window.onscroll = function () {
             menu()
+            dark()
         };
 
         function menu() {
-            if (document.documentElement.scrollTop > 1) {
-                document.getElementById("navbar").classList.remove("fixed")
+            if (document.documentElement.scrollTop > 650) {
+                document.getElementById("navbar").classList.add("md:bg-black")
+                document.getElementById("navbar").classList.remove("md:bg-transparent")
+                document.getElementById("navbar").classList.add("md:w-screen")
+                document.getElementById("navbar").classList.remove("md:w-full")
+                document.getElementById("navbar").classList.add("md:pl-10")
+                document.getElementById("navbar").classList.remove("md:pl-0")
+                document.getElementById("navbar").classList.add("md:pr-10")
+                document.getElementById("navbar").classList.remove("md:pr-0")
+                document.getElementById("navbar").classList.remove("md:border-b")
             } else {
-                document.getElementById("navbar").classList.remove("fixed")
+                document.getElementById("navbar").classList.remove("md:bg-black")
+                document.getElementById("navbar").classList.add("md:bg-transparent")
+                document.getElementById("navbar").classList.remove("md:w-screen")
+                document.getElementById("navbar").classList.add("md:w-full")
+                document.getElementById("navbar").classList.remove("md:pl-10")
+                document.getElementById("navbar").classList.add("md:pl-0")
+                document.getElementById("navbar").classList.remove("md:pr-10")
+                document.getElementById("navbar").classList.add("md:pr-0")
+                document.getElementById("navbar").classList.add("md:border-b")
+            }
+        }
+
+        function dark(){
+            if (document.documentElement.scrollTop > 100) {
+                document.getElementById("darkmode").classList.add("block")
+                document.getElementById("darkmode").classList.remove("hidden")
+            } else {
+                document.getElementById("darkmode").classList.remove("block")
+                document.getElementById("darkmode").classList.add("hidden")
             }
         }
 
@@ -392,7 +500,6 @@
     
             }, 10))
             });
-
     </script>
 
     <script src="JobLancer.js"></script>
