@@ -744,6 +744,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -840,6 +844,10 @@ video {
   height: 34px;
 }
 
+.h-\[35rem\] {
+  height: 35rem;
+}
+
 .h-\[3rem\] {
   height: 3rem;
 }
@@ -887,6 +895,26 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[45rem\] {
+  height: 45rem;
+}
+
+.h-\[42rem\] {
+  height: 42rem;
+}
+
+.h-\[4rem\] {
+  height: 4rem;
+}
+
+.h-\[37rem\] {
+  height: 37rem;
+}
+
+.h-\[38rem\] {
+  height: 38rem;
 }
 
 .w-1\/2 {
@@ -993,6 +1021,10 @@ video {
   width: 30px;
 }
 
+.w-\[30rem\] {
+  width: 30rem;
+}
+
 .w-\[350px\] {
   width: 350px;
 }
@@ -1011,10 +1043,6 @@ video {
 
 .w-\[65rem\] {
   width: 65rem;
-}
-
-.w-\[75rem\] {
-  width: 75rem;
 }
 
 .w-\[90\%\] {
@@ -1045,10 +1073,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[30rem\] {
-  width: 30rem;
 }
 
 .min-w-0 {
@@ -1695,6 +1719,14 @@ video {
   padding-top: 2rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-7 {
+  padding-right: 1.75rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2282,6 +2314,10 @@ video {
     height: 21rem;
   }
 
+  .md\:h-\[25rem\] {
+    height: 25rem;
+  }
+
   .md\:h-auto {
     height: auto;
   }
@@ -2326,6 +2362,10 @@ video {
     width: 24rem;
   }
 
+  .md\:w-\[10rem\] {
+    width: 10rem;
+  }
+
   .md\:w-\[20rem\] {
     width: 20rem;
   }
@@ -2344,6 +2384,10 @@ video {
 
   .md\:w-screen {
     width: 100vw;
+  }
+
+  .md\:w-\[1rem\] {
+    width: 1rem;
   }
 
   .md\:max-w-5xl {
@@ -2402,6 +2446,11 @@ video {
     padding-right: 6rem;
   }
 
+  .md\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
   .md\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -2420,6 +2469,11 @@ video {
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .md\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
   }
 
   .md\:pb-0 {
@@ -2452,6 +2506,14 @@ video {
 
   .md\:pt-3 {
     padding-top: 0.75rem;
+  }
+
+  .md\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .md\:pr-14 {
+    padding-right: 3.5rem;
   }
 
   .md\:text-left {
