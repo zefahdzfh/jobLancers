@@ -993,6 +993,10 @@ video {
   width: 30px;
 }
 
+.w-\[30rem\] {
+  width: 30rem;
+}
+
 .w-\[350px\] {
   width: 350px;
 }
@@ -1011,10 +1015,6 @@ video {
 
 .w-\[65rem\] {
   width: 65rem;
-}
-
-.w-\[75rem\] {
-  width: 75rem;
 }
 
 .w-\[90\%\] {
@@ -1045,10 +1045,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[30rem\] {
-  width: 30rem;
 }
 
 .min-w-0 {
@@ -1472,6 +1468,18 @@ video {
 
 .bg-\[url\(\/assets\/img\/home4\.png\)\] {
   background-image: url(/assets/img/home4.png);
+}
+
+.bg-\[url\(\'\/assets\/img\/selec\.png\'\)\] {
+  background-image: url('/assets/img/selec.png');
+}
+
+.bg-\[url\(\'\/assets\/img\/\'\)\] {
+  background-image: url('/assets/img/');
+}
+
+.bg-\[url\(\'\/assets\/img\/cate1\'\)\] {
+  background-image: url('/assets/img/cate1');
 }
 
 .bg-cover {
