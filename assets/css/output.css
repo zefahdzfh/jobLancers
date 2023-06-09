@@ -1498,6 +1498,18 @@ video {
   background-image: url(/assets/img/home4.png);
 }
 
+.bg-\[url\(\'\/assets\/img\/selec\.png\'\)\] {
+  background-image: url('/assets/img/selec.png');
+}
+
+.bg-\[url\(\'\/assets\/img\/\'\)\] {
+  background-image: url('/assets/img/');
+}
+
+.bg-\[url\(\'\/assets\/img\/cate1\'\)\] {
+  background-image: url('/assets/img/cate1');
+}
+
 .bg-cover {
   background-size: cover;
 }
