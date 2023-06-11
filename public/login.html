@@ -114,19 +114,19 @@
                     window.location.href = "home.html";
                 } else {
                     //code validate email benar, tetapi password salah
-                    alertPassword.innerHTML = "salah bangs";
+                    alertPassword.innerHTML = "Your Password is Wrong";
                     alertEmail.innerHTML = "";
                 }
             } else {
                 // code validate email salah
-                alertEmail.innerHTML = "masukan email yang benar";
+                alertEmail.innerHTML = "Input the true Emails";
 
                 if (valuePassword !== "") {
                     // code validate email salah, tetapi password benar
                     alertPassword.innerHTML = "";
                 } else {
                     // code validate email salah, dan password salah
-                    alertPassword.innerHTML = "salah bangs";
+                    alertPassword.innerHTML = "The input Are Wrong";
                 }
             }
         }

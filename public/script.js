@@ -118,10 +118,10 @@ file.addEventListener('change', function(){
 
   $(window).on('load', function () {
 
-  $('.spin-wrapper').fadeOut();
+  
 
   $(setTimeout(() => {
-
-      }, 10))
+        $('.spin-wrapper').fadeOut();
+      }, 3000))
       });
   
