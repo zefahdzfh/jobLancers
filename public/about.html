@@ -258,24 +258,24 @@
                 <div class="w-full flex justify-center items-center text-center mx-auto flex-col md:flex-row gap-10">
                     <div
                         class="w-96 px-6 py-6  text-center bg-slate-500/10 dark:bg-slate-500/50 rounded-lg lg:mt-0 xl:px-10">
-                        <div class="space-y-4 xl:space-y-6">
-                            <img class="mx-auto rounded-full h-36 w-36" src="../assets/img/gwejh.jpg"
+                        <div class="space-y-4 xl:space-y-6 object-cover">
+                            <img class="mx-auto rounded-full h-36 w-36 object-cover " src="../assets/img/ceo.JPG"
                                 alt="author avatar">
                             <div class="space-y-2">
                                 <div
                                     class="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
                                     <h3 class="text-black dark:text-white text-xl">Hudzaifah Ibnu Puase</h3>
                                     <p class="text-gray-600 dark:text-gray-200 text-base">Chairman & Founder of Joblancers</p>
-                                    <p class="text-gray-600 dark:text-gray-200 text-base"><span class="text-2xl text-redPrimary font-bold ">"</span> Hello, I hope all of you <br> love our projects !! <span class="text-2xl text-redPrimary font-bold ">"</span></p>
+                                    <p class="text-gray-600 dark:text-gray-200 text-base"><span class="text-2xl text-redPrimary font-bold ">"</span>Hello Senores.. <br> hope y'all love our project <span class="text-2xl text-redPrimary font-bold ">"</span></p>
                                     <div class="flex justify-center mt-5 space-x-5"><a href="#"
                                             class="inline-block text-gray-400"><span class="sr-only">Twitter</span>
                                             <i class="fa-brands fa-twitter hover:text-blue-500"></i>
                                         </a>
-                                        <a href="#" class="inline-block text-gray-400"><span
+                                        <a href="https://github.com/zefahdzfh" class="inline-block text-gray-400"><span
                                                 class="sr-only">GitHub</span>
                                             <i class="fa-brands fa-github hover:text-gray-900"></i>
                                         </a>
-                                        <a href="#" class="inline-block text-gray-400"><span
+                                        <a href="https://www.instagram.com/zefahdzfh_19" class="inline-block text-gray-400"><span
                                                 class="sr-only">Instagram</span>
                                             <i class="fa-brands fa-instagram hover:text-redPrimary"></i></a>
                                     </div>
@@ -299,11 +299,11 @@
                                             class="inline-block text-gray-400"><span class="sr-only">Twitter</span>
                                             <i class="fa-brands fa-twitter hover:text-blue-500"></i>
                                         </a>
-                                        <a href="#" class="inline-block text-gray-400"><span
+                                        <a href="https://github.com/zeesec" class="inline-block text-gray-400"><span
                                                 class="sr-only">GitHub</span>
                                             <i class="fa-brands fa-github hover:text-gray-900"></i>
                                         </a>
-                                        <a href="#" class="inline-block text-gray-400"><span
+                                        <a href="https://www.instagram.com/zzeeeaane" class="inline-block text-gray-400"><span
                                                 class="sr-only">Instagram</span>
                                             <i class="fa-brands fa-instagram hover:text-redPrimary"></i></a>
                                     </div>
@@ -315,7 +315,7 @@
                     <div
                         class="w-96 px-6 py-6  text-center bg-slate-500/10 dark:bg-slate-500/50 rounded-lg lg:mt-0 xl:px-10">
                         <div class="space-y-4 xl:space-y-6">
-                            <img class="mx-auto rounded-full h-36 w-36" src="../assets/img/pp.png" alt="author avatar">
+                            <img class="mx-auto rounded-full h-36 w-36" src="../assets/img/jek.jpg" alt="author avatar">
                             <div class="space-y-2">
                                 <div
                                     class="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
@@ -326,11 +326,11 @@
                                             class="inline-block text-gray-400"><span class="sr-only">Twitter</span>
                                             <i class="fa-brands fa-twitter hover:text-blue-500"></i>
                                         </a>
-                                        <a href="#" class="inline-block text-gray-400"><span
+                                        <a href="https://github.com/ImJek" class="inline-block text-gray-400"><span
                                                 class="sr-only">GitHub</span>
                                             <i class="fa-brands fa-github hover:text-gray-900"></i>
                                         </a>
-                                        <a href="#" class="inline-block text-gray-400"><span
+                                        <a href="https://www.instagram.com/alfaruky_67" class="inline-block text-gray-400"><span
                                                 class="sr-only">Instagram</span>
                                             <i class="fa-brands fa-instagram hover:text-redPrimary"></i></a>
                                     </div>
@@ -514,143 +514,17 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
             integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
             crossorigin="anonymous" referrerpolicy="no-referrer">
-            </script>
-
-
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbyB9fVvFnTIcuBz-0iZoWbblq-Inr9R7b-IfuwrNYc1IHkSyNfsEjDp-PwVBQGPc0GkWw/exec'
-        const form = document.forms['contact-us']
-      
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    form.reset()
-                    alert("Your Message send succesfully ")
-                    console.log('Success!', response)
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-
-        const imgDiv = document.querySelector('.profile-pic-div');
-    const img = document.querySelector('#photo');
-    const file = document.querySelector('#file');
-    const uploadbtn = document.querySelector('#uploadbtn');
-
-
-    file.addEventListener('change', function(){
-
-        const choosedfile = this.files[0];
-
-        const reader = new FileReader();
-
-        reader.addEventListener('load', function(){
-            img.setAttribute('src', reader.result);
-        });
-
-        reader.readAsDataURL(choosedfile)
-
-    });
-
-
-            function Menu(e) {
-                let list = document.querySelector('ul');
-                e.name === 'menu' ? (e.name = "close", list.classList.
-                    add('top-[100px]'), list.classList.add('opacity-100'))
-                    : (e.name = "menu", list.classList.remove('top-[100px]'),
-                        list.classList.remove('opacity-100'))
-            }
-
-
-            // const imgDiv = document.querySelector('#userImg');
-            // const img = document.querySelector('#photo');
-            // const file = document.querySelector('#file')
-            // const upload = document.querySelector('#upload');
-
-            // file.addEventListener('change',function(){
-            //     const chosedfile = this.file[0];
-            //     if(chosedfile){
-            //         const reader = new FileReader();
-
-            //         reader.addEventListener('load', function(){
-            //             img.setAttribute('src' , reader.result);
-            //         })
-            //     reader.readAsDataURL(chosedfile);
-            //     }
-            // })
-
-
-
-
-            const darkToggle = document.querySelector('#dark-toggle');
-            const html = document.querySelector('html');
-
-            darkToggle.addEventListener('click', function () {
-                if (darkToggle.checked) {
-                    html.classList.add('dark');
-                    localStorage.theme = 'dark';
-                } else {
-                    html.classList.remove('dark');
-                    localStorage.theme = 'light';
-                }
-            });
-
-            window.onscroll = function () {
-                menu()
-                dark()
-            };
-
-            function menu() {
-                if (document.documentElement.scrollTop > 650) {
-                    document.getElementById("navbar").classList.add("md:bg-black")
-                    document.getElementById("navbar").classList.remove("md:bg-transparent")
-                    document.getElementById("navbar").classList.add("md:w-screen")
-                    document.getElementById("navbar").classList.remove("md:w-full")
-                    document.getElementById("navbar").classList.add("md:pl-10")
-                    document.getElementById("navbar").classList.remove("md:pl-0")
-                    document.getElementById("navbar").classList.add("md:pr-10")
-                    document.getElementById("navbar").classList.remove("md:pr-0")
-                    document.getElementById("navbar").classList.remove("md:border-b")
-                } else {
-                    document.getElementById("navbar").classList.remove("md:bg-black")
-                    document.getElementById("navbar").classList.add("md:bg-transparent")
-                    document.getElementById("navbar").classList.remove("md:w-screen")
-                    document.getElementById("navbar").classList.add("md:w-full")
-                    document.getElementById("navbar").classList.remove("md:pl-10")
-                    document.getElementById("navbar").classList.add("md:pl-0")
-                    document.getElementById("navbar").classList.remove("md:pr-10")
-                    document.getElementById("navbar").classList.add("md:pr-0")
-                    document.getElementById("navbar").classList.add("md:border-b")
-                }
-            }
-
-            function dark() {
-                if (document.documentElement.scrollTop > 100) {
-                    document.getElementById("darkmode").classList.add("block")
-                    document.getElementById("darkmode").classList.remove("hidden")
-                } else {
-                    document.getElementById("darkmode").classList.remove("block")
-                    document.getElementById("darkmode").classList.add("hidden")
-                }
-            }
-
-            $(window).on('load', function () {
-
-                $('.spin-wrapper').fadeOut();
-
-                $(setTimeout(() => {
-
-                }, 10))
-            });
-
         </script>
+
+
+        
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 
-        <script src="JobLancer.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
