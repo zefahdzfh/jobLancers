@@ -122,6 +122,6 @@ file.addEventListener('change', function(){
 
   $(setTimeout(() => {
         $('.spin-wrapper').fadeOut();
-      }, 3000))
+      }, 1000))
       });
   
