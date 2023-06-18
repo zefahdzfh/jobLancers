@@ -2,160 +2,173 @@
 <html lang="en">
 
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="../assets/css/output.css">
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-        <title>Sign Up</title>
-    </head>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <title>Sign Up</title>
+  </head>
 </head>
 
 <body class="scroll-smooth font-montserrat">
-    <div class="bg-[url('/assets/img/signup.png')] w-2/4 bg-center hidden md:block  text-white bg-blend-multiply bg-black/70 float-left bg-cover h-screen">
-        <div class="px-3 py-5">
-            <span class="font-semibold  float-left text-3xl flex items-center ">Job<p class="text-red-700 text-2xl">Lancers</p></span>
+  <div
+    class="bg-[url('/assets/img/signup.png')] w-2/4 bg-center hidden md:block  text-white bg-blend-multiply bg-black/70 float-left bg-cover h-screen">
+    <div class="px-3 py-5">
+      <span class="font-semibold  float-left text-3xl flex items-center ">Job<p class="text-red-700 text-2xl">Lancers
+        </p></span>
 
     </div>
     <div class="w-full mx-auto flex justify-center items-center flex-col text-center mt-56 gap-3">
-        <h1 class="text-white font-semibold text-xl md:text-4xl text-center ">JobLancers Are 
-            here !
-        </h1>
-        <p
-            class="font-light my-auto md:font-extralight text-base md:text-2xl text-center text-white w-8/12">
-            For all people who wanted
-            the best opportunities 
-            on freelance jobs !
-        </p>
+      <h1 class="text-white font-semibold text-xl md:text-4xl text-center ">JobLancers Are
+        here !
+      </h1>
+      <p class="font-light my-auto md:font-extralight text-base md:text-2xl text-center text-white w-8/12">
+        For all people who wanted
+        the best opportunities
+        on freelance jobs !
+      </p>
 
     </div>
-    </div>
+  </div>
 
-    <div class="">
-    <div class="flex text-black flex-col absolute top-0 bottom-0 right-20 md:right-32 gap-20 py-14">
-        <span class="font-semibold text-5xl flex justify-center">Sign up</span>
-        <div class="flex flex-col items-center gap-6">
-            <div>
-                <label for="name" class="block mb-2 text-lg font-medium text-gray-900">username</label>
-                <input type="text" name="name" id="text"
-                    class="bg-gray-50 border outline-none text-gray-900 sm:text-sm rounded-lg block w-[381px] p-3"
-                    placeholder="yourname" />
-                <p class="text-red-600 font-medium text-sm" id="username-alert"></p>
-            </div>
-            <div>
-                <label for="email" class="block mb-2 text-lg font-medium text-gray-900">email</label>
-                <input type="email" name="email" id="email"
-                    class="bg-gray-50 border outline-none text-gray-900 sm:text-sm rounded-lg block w-[381px] p-3"
-                    placeholder="Enter your email here" />
-                <p class="text-red-600 font-medium text-sm" id="email-alert"></p>
-            </div>
-            <div>
-                <label for="password" class="block mb-2 text-lg font-medium text-gray-900">Password</label>
-                <input type="password" name="password" id="password"
-                    class="bg-gray-50 border outline-none text-gray-900 sm:text-sm rounded-lg block w-[381px] p-3"
-                    placeholder="Enter your password here" />
-                <p class="text-red-600 font-medium text-sm" id="password-alert"></p>
-            </div>
-
-            <button onclick="gomockup()" class="bg-red-500 font-bold text-lg text-white rounded-lg  mx-auto w-[200px] h-12">Sign up</button>
+  <div class="">
+    <div class="flex text-black flex-col fixed top-0 bottom-0 right-20 md:right-36 gap-10 py-14">
+      <span class="font-semibold text-5xl flex justify-center">Sign up</span>
+      <div class="flex flex-col items-center gap-6">
+        <div>
+          <label for="name" class="block mb-2 text-lg font-medium text-gray-900">username</label>
+          <input type="text" name="name" id="text"
+            class="bg-gray-50 border outline-none text-gray-900 sm:text-sm rounded-lg block w-[381px] p-3"
+            placeholder="yourname" />
+          <p class="text-red-600 font-medium text-sm" id="username-alert"></p>
         </div>
+        <div>
+          <label for="email" class="block mb-2 text-lg font-medium text-gray-900">email</label>
+          <input type="email" name="email" id="email"
+            class="bg-gray-50 border outline-none text-gray-900 sm:text-sm rounded-lg block w-[381px] p-3"
+            placeholder="Enter your email here" />
+          <p class="text-red-600 font-medium text-sm" id="email-alert"></p>
+        </div>
+        <div>
+          <label for="password" class="block mb-2 text-lg font-medium text-gray-900">Password</label>
+          <input type="password" name="password" id="password"
+            class="bg-gray-50 border outline-none text-gray-900 sm:text-sm rounded-lg block w-[381px] p-3"
+            placeholder="Enter your password here" />
+          <p class="text-red-600 font-medium text-sm" id="password-alert"></p>
+        </div>
+        <div>
+          <label for="confirm-password" class="block mb-2 text-lg font-medium text-gray-900">Confirm Your
+            Password</label>
+          <input type="password" name="confirm-password" id="confirm-password"
+            class="bg-gray-50 border outline-none text-gray-900 sm:text-sm rounded-lg block w-[381px] p-3"
+            placeholder="Enter your password here" />
+          <p class="text-red-600 font-medium text-sm" id="confirm-password-alert"></p>
+        </div>
+
+        <button onclick="gomockup()"
+          class="bg-red-500 font-bold text-lg text-white rounded-lg  mx-auto w-[200px] h-12">Sign up</button>
+
+      </div>
+      <div class="flex-col flex right-20 md:right-[170px]  gap-16">
+        <span class="font-medium w-full text-black text-lg flex items-center justify-center">already have an account? <a
+            href="login.html" class="font-bold px-1"> Sign in</a> Here</span>
+      </div>
     </div>
-    <div class="flex-col flex right-20 md:right-[170px] absolute bottom-10 gap-16">
-        
-       
-        <span class="font-medium w-full text-black text-lg flex items-center justify-center">already have an account? <a href="login.html"
-                class="font-bold px-1"> Sign in</a> Here</span>
-    </div>
-    
-
-</div>
 
 
 
-    <script>
-        function validateEmail(value) {
-  if (/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(value)) {
-    return true;
-  } else {
-    return false;
-  }
-}
+  </div>
 
-function gomockup() {
-  let valueEmail = document.getElementById("email").value;
-  let valueUsername = document.getElementById("text").value;
-  let valuePassword = document.getElementById("password").value;
 
-  let alertEmail = document.getElementById("email-alert");
-  let alertUsername = document.getElementById("username-alert");
-  let alertPassword = document.getElementById("password-alert");
 
-  if (valueUsername !== "") {
-    // ketika value username di isi
-    alertUsername.innerHTML = "";
-
-    if (validateEmail(valueEmail)) {
-      // ketika value username dan email diisi
-      alertEmail.innerHTML = "";
-
-      if (valuePassword !== "") {
-        // ketika value username, email, password diisi
-        alertPassword.innerHTML = "";
-        window.location.href = "login.html";
+  <script>
+    function validateEmail(value) {
+      if (/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(value)) {
+        return true;
       } else {
-        // ketika value username dan email diisi tetapi password tdk
-        alertPassword.innerHTML = "enter your password!";
-      }
-    } else {
-      // ketika value username diisi tetapi email tidak diisi
-      alertEmail.innerHTML = "enter your email correctly!";
-
-      if (valuePassword !== "") {
-        // ketika value username dan password diisi tetapi email tidak
-        alertPassword.innerHTML = "";
-      } else {
-        // ketika value username diisi tetapi email dan password tdk
-        alertPassword.innerHTML = "enter your password!";
+        return false;
       }
     }
-  } else {
-    // ketika value username tdk diisi
-    alertUsername.innerHTML = "enter your username!";
-    if (validateEmail(valueEmail)) {
-      // ktika value username tdk diisi tetapi email diisi
-      alertEmail.innerHTML = "";
-      if (valuePassword !== "") {
-        // ketika value username tdk diisi tetapi email dan password diisi
-        alertPassword.innerHTML = "";
+
+    function gomockup() {
+      let valueEmail = document.getElementById("email").value;
+      let valueUsername = document.getElementById("text").value;
+      let valuePassword = document.getElementById("password").value;
+      let valueConfirm = document.getElementById("confirm-password").value;
+
+      let alertEmail = document.getElementById("email-alert");
+      let alertUsername = document.getElementById("username-alert");
+      let alertPassword = document.getElementById("password-alert");
+      let alertConfirm = document.getElementById("confirm-password-alert");
+
+      if (valueUsername !== "") {
+        // ketika value username di isi
+        alertUsername.innerHTML = "";
+
+        if (validateEmail(valueEmail)) {
+          // ketika value username dan email diisi
+          alertEmail.innerHTML = "";
+
+          if (valuePassword !== "") {
+            // ketika value username, email, password diisi
+            alertPassword.innerHTML = "";
+            window.location.href = "login.html";
+          } else {
+            // ketika value username dan email diisi tetapi password tdk
+            alertPassword.innerHTML = "enter your password!";
+          }
+        } else {
+          // ketika value username diisi tetapi email tidak diisi
+          alertEmail.innerHTML = "enter your email correctly!";
+
+          if (valuePassword !== "") {
+            // ketika value username dan password diisi tetapi email tidak
+            alertPassword.innerHTML = "";
+          } else {
+            // ketika value username diisi tetapi email dan password tdk
+            alertPassword.innerHTML = "enter your password!";
+          }
+        }
       } else {
-        // ketika value username dan password tdk diisi tetapi email diisi
-        alertPassword.innerHTML = "enter your password!";
-      }
-    } else {
-      // ketika value username dan email tdk diisi
-      alertEmail.innerHTML = "enter your email correctly!";
-      if (valuePassword !== "") {
-        // ketika value username dan email tdk diisi tetaou password diisi
-        alertPassword.innerHTML = "";
-      } else {
-        // ketika value username, password, dan email tdk diisi
-        alertPassword.innerHTML = "enter your password!";
+        // ketika value username tdk diisi
+        alertUsername.innerHTML = "enter your username!";
+        if (validateEmail(valueEmail)) {
+          // ktika value username tdk diisi tetapi email diisi
+          alertEmail.innerHTML = "";
+          if (valuePassword !== "") {
+            // ketika value username tdk diisi tetapi email dan password diisi
+            alertPassword.innerHTML = "";
+          } else {
+            // ketika value username dan password tdk diisi tetapi email diisi
+            alertPassword.innerHTML = "enter your password!";
+          }
+        } else {
+          // ketika value username dan email tdk diisi
+          alertEmail.innerHTML = "enter your email correctly!";
+          if (valuePassword !== "") {
+            // ketika value username dan email tdk diisi tetaou password diisi
+            alertPassword.innerHTML = "";
+          } else {
+            // ketika value username, password, dan email tdk diisi
+            alertPassword.innerHTML = "enter your password!";
+          }
+        }
       }
     }
-  }
-}
-    </script>
+  </script>
 </body>
 
 </html>

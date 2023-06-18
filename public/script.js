@@ -17,11 +17,29 @@
   })
   function Menu(e) {
       let list = document.querySelector('ul');
-      e.name === 'menu' ? (e.name = "close", list.classList.
-          add('top-[100px]'), list.classList.add('opacity-100'))
+      e.name === 'menu' ? (e.name = "close", list.classList.add('top-[100px]'), 
+      list.classList.add('opacity-100'), list.classList.remove('top-[-400px]'),list.classList.remove('opacity-0'))
           : (e.name = "menu", list.classList.remove('top-[100px]'),
-              list.classList.remove('opacity-100'))
+              list.classList.remove('opacity-100'),list.classList.add('top-[-400px]'),list.classList.add('opacity-0'))
   }
+
+  
+
+//   let isShow = false
+
+//   const icon = document.getElementById("icon")
+//   icon.addEventListener('click', () => {
+//     let list = document.querySelector('ul');
+//     if(isShow == false) {
+//         list.classList.remove('top-[-400px]')
+//         list.classList.add('top-[400px]')
+//         isShow = true
+//     } else {
+//         list.classList.remove('top-[-400px]')
+//         list.classList.add('top-[400px]')
+//         isShow = false
+//     }
+//   })
 
 
   // const imgDiv = document.querySelector('#userImg');
@@ -93,6 +111,8 @@ file.addEventListener('change', function(){
           document.getElementById("navbar").classList.add("md:pr-10")
           document.getElementById("navbar").classList.remove("md:pr-0")
           document.getElementById("navbar").classList.remove("md:border-b")
+          document.getElementById("navbar").classList.add("md:w-screen")
+          document.getElementById("navbar").classList.remove("md:w-full")
       } else {
           document.getElementById("navbar").classList.remove("md:bg-black")
           document.getElementById("navbar").classList.add("md:bg-transparent")
@@ -103,6 +123,8 @@ file.addEventListener('change', function(){
           document.getElementById("navbar").classList.remove("md:pr-10")
           document.getElementById("navbar").classList.add("md:pr-0")
           document.getElementById("navbar").classList.add("md:border-b")
+          document.getElementById("navbar").classList.remove("md:w-screen")
+          document.getElementById("navbar").classList.add("md:w-full")
       }
   }
 

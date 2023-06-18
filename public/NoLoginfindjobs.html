@@ -234,65 +234,138 @@
 
 
 
-    <footer>
-        <div class="w-screen h-[16rem] md:h-[21rem] bg-black px-10 md:px-24 pb-4 flex">
-            <div class="pt-10 md:pt-20 ">
-               <h5 class="font-bold text-xl md:text-4xl text-white">Job<span class="text-redPrimary">Lancers</span></h5>
-               <p class="font-light text-lg md:text-3xl text-white mb-5">follow our social media</p>
-               <div class="text-white text-xl md:text-4xl w-full pb-20 flex flex-row gap-5 md:gap-10 duration-75">
-                    <a href="">
-                        <i class="fa-brands fa-facebook hover:animate-bounce hover:text-redPrimary"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-instagram hover:animate-bounce hover:text-redPrimary"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-twitter hover:animate-bounce hover:text-redPrimary"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-github hover:animate-bounce hover:text-redPrimary"></i>
-                    </a>
-                    
-                    
-                    
-                    
-               </div>   
-            </div>
-            <div class="flex w-full justify-end flex-row gap-5 md:gap-52 pt-10 md:pt-20">
-                <div class=" text-center flex flex-col gap-5">
-                    <h5 class="text-white font-semibold text-lg md:text-2xl underline">Links</h5>
-                    <a href="home.html">
-                        <p class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Home</p>
-                    </a>
-                    <a href="findjobs.html">
-                        <p class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">Find Jobs</p>
-                    </a>
-                    <a href="about.html">
-                         <p class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">About Us</p>
-                    </a>
-                   
-                </div>
-                <div class="text-center flex flex-col gap-5">
-                    <h5 class="text-white font-semibold text-lg md:text-2xl underline">Contact</h5>
-                    <a href="@alfaruky67@gmail.com">
-                         <p class="text-white font-light text-sm md:text-xl  duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">@alfaruky67@Gmail.com</p>
-                    </a>
-                   <a href="wa.me/62812345678910">
-                        <p class="text-white font-light text-sm md:text-xl  duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">+62 8123-4567-8910</p>
-                   </a>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="w-full bg-white h-[1px]">           
-        </div>
-        <div class="w-screen bg-black md:h-[10rem] px-10 py-10">
-            <p class="text-center text-white font-light text-xs md:text-xl">© 2023 Joblancers. Is a registered Trademark of  Joblancers Professional Services Corporation All rights reserved. 
-                This website and its content are protected by copyright law </p>
+   <footer>
+    <div>
+        <form action="" name="contact-us">
+            <div
+                class="w-screen h-5/6 px-20 py-20 bg-[url('/assets/img/contact.png')] bg-blend-multiply bg-black/80 bg-no-repeat bg-center flex flex-col justify-center items-center">
+                <h1 class="text-3xl md:text-5xl font-bold text-center  text-white"> Our <span
+                        class="text-redPrimary"> Customer Service </span>
+                </h1>
+                <p
+                    class="text-sm md:text-xl leading-relaxed md:leading-loose text-white font-medium mx-auto items-center justify-center w-fit md:w-7/12 h-fit my-auto text-center">
+                    Can't find the jobs that you wanted? Contact our responsive Customer Services
+                </p>
 
+                <div class="flex flex-col md:flex-row gap-7 mt-10 ">
+                    <div class="flex flex-col   items-center">
+                        <label for="name"
+                            class=" w-max text-white font-medium text-base md:text-xl pb-2 justify-center items-center text-center">Name</label>
+                        <input type="name" name="name" id="name" class="w-[20rem] h-[3rem] rounded-xl px-3 py-3">
+                    </div>
+
+                    <div class="flex flex-col   items-center">
+                        <label for="email" class=" text-white font-medium text-base md:text-xl pb-2">Email</label>
+                        <input type="email" name="email" id="email" class="w-[20rem] h-[3rem] rounded-xl px-3 py-3">
+                    </div>
+
+                </div>
+                <div class="mt-6 mb-5 w-[42rem] flex flex-col gap-5 justify-center items-center">
+                    <label for="message" class="text-white font-medium text-base  md:text-xl pb-2">Your
+                        Message</label>
+                    <textarea name="message" id="message"
+                        class="w-[20rem] md:w-full h-[5rem] md:h-[10rem] rounded-xl px-5 py-3"></textarea>
+                    <button
+                        class="w-[20rem] md:w-full rounded-lg hover:bg-black bg-redPrimary hover:text-redPrimary text-white font-medium h-[3rem] duration-1000">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="w-screen h-auto py-10 bg-black px-10 md:px-24 pb-4 flex md:flex-row flex-col">
+        <div class="pt-10 md:pt-20 ">
+            <h5 class="font-bold text-xl md:text-4xl text-white">Job<span class="text-redPrimary">Lancers</span>
+            </h5>
+            <p class="font-light text-lg md:text-3xl text-white mb-5">follow our social media</p>
+            <div class="text-white text-xl md:text-4xl w-full pb-20 flex flex-row gap-5 md:gap-10 duration-75">
+                <a href="">
+                    <i class="fa-brands fa-facebook hover:animate-bounce hover:text-redPrimary"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram hover:animate-bounce hover:text-redPrimary"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-twitter hover:animate-bounce hover:text-redPrimary"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-github hover:animate-bounce hover:text-redPrimary"></i>
+                </a>
+
+
+
+
+            </div>
         </div>
-    </footer>
-    
+        <div class="flex w-full justify-end flex-row gap-5 md:gap-52 pt-1 md:pt-20">
+            <div class=" text-left flex flex-col gap-5">
+                <h5 class="text-white font-semibold text-lg md:text-2xl underline">Terms</h5>
+                <a href="#">
+                    <p
+                        class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">
+                        Privacy</p>
+                </a>
+                <a href="#">
+                    <p
+                        class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">
+                        Copyright</p>
+                </a>
+                <a href="#">
+                    <p
+                        class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">
+                        Conditions</p>
+                </a>
+
+            </div>
+
+            <div class=" text-left flex flex-col gap-5">
+                <h5 class="text-white font-semibold text-lg md:text-2xl underline">Links</h5>
+                <a href="home.html">
+                    <p
+                        class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">
+                        Home</p>
+                </a>
+                <a href="findjobs.html">
+                    <p
+                        class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">
+                        Find Jobs</p>
+                </a>
+                <a href="about.html">
+                    <p
+                        class="text-white font-light text-sm md:text-xl duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">
+                        About Us</p>
+                </a>
+
+            </div>
+            <div class="text-left flex flex-col gap-5">
+                <h5 class="text-white font-semibold text-lg md:text-2xl underline">Contact</h5>
+                <a href="#" class="flex flex-row">
+                    <div class="text-xl items-center font-medium list-none text-white "><i class="fa-solid fa-location-dot"></i></i></div>
+                    <p
+                        class="text-white font-light text-sm md:text-xl  duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary ml-2">
+                       Jonggol,West Java</p>
+                </a>
+                <a href="@alfaruky67@gmail.com">
+                    <p
+                        class="text-white font-light text-sm md:text-xl  duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">
+                        @alfaruky67@Gmail.com</p>
+                </a>
+                <a href="wa.me/62812345678910">
+                    <p
+                        class="text-white font-light text-sm md:text-xl  duration-[0.2s] ease-in-out hover:pb-1 hover:border-b-redPrimary hover:border-b hover:text-redPrimary">
+                        +62 8123-4567-8910</p>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="w-full bg-white h-[1px]">
+    </div>
+    <div class="w-screen bg-black md:h-[10rem] px-10 py-10">
+        <p class="text-center text-white font-light text-xs md:text-xl">© 2023 Joblancers. Is a registered Trademark
+            of Joblancers Professional Services Corporation All rights reserved.
+            This website and its content are protected by copyright law </p>
+
+    </div>
+</footer>
 
 
 
